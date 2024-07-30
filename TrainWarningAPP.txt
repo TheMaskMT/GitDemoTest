@@ -7,3 +7,6 @@ Thể hiện trên bản đồ (web, mobile)
 
 Mobile thì lấy GPS
 Cảnh báo tàu chạy
+
+Admin thì nhập liệu bằng tay
+User thì xem
