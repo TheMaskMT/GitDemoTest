@@ -1,0 +1,12 @@
+Thu thập dữ liệu thông tin tàu hỏa
+Tọa độ 
+Hình ảnh 
+Ttlq
+Thời gian tàu chạy
+Thể hiện trên bản đồ (web, mobile)
+
+Mobile thì lấy GPS
+Cảnh báo tàu chạy
+
+Admin thì nhập liệu bằng tay
+User thì xem
