@@ -5,6 +5,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text style={styles.begin}>This is the begin.</Text>
+      <Text>This is the begin.</Text>
       <StatusBar style="auto" />
     </View>
   );
@@ -15,11 +16,13 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
-    fontSize: 200,
     justifyContent: 'center',
   },
 
   begin: {
+    fontSize: 36,
     
+    alignItems: 'center',
+    justifyContent: 'center',
   }
 });
