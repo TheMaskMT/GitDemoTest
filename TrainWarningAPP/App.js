@@ -21,7 +21,8 @@ const styles = StyleSheet.create({
 
   begin: {
     fontSize: 36,
-    
+    fontFamily: 'timenewroman',
+    fontWeight: 'bold',
     alignItems: 'center',
     justifyContent: 'center',
   }
