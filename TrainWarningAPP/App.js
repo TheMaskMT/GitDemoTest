@@ -3,22 +3,32 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { BackYardScreen } from './src/components/backyard';
-import { HomeScreen, sayGoodbye } from './src/components/header';
+import { InfoScreen } from './src/components/info';
+import { HomeScreen, sayGoodbye, HeaderLogo } from './src/components/header';
 
 const Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen name = "Home" component={HomeScreen}></Stack.Screen>
+      <Stack.Navigator 
+      initialRouteName="Home"
+      screenOptions={{
+          headerStyle: {
+            backgroundColor: 'orange',
+          },
+          headerTintColor: 'white',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+          },
+        }}>
+        <Stack.Screen name = "Home" component={HomeScreen} options={{headerTitle:()=><HeaderLogo></HeaderLogo>}}></Stack.Screen>
+        <Stack.Screen name = "Info" component={InfoScreen}></Stack.Screen>
       </Stack.Navigator>      
     </NavigationContainer>
   );
 }
 
-sayGoodbye();
 
 // const styles = StyleSheet.create({
 //   container: {
