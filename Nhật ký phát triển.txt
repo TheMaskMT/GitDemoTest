@@ -1,4 +1,5 @@
-Ngày 01/08/2024 16:24
+Ngày 01/08/2024 
+    16:24
 * Lưu ý sau khi tạo project và cài bằng các câu lệnh sau
 $ npm install -g expo-cli
 $ expo init HeaderTest //Câu lệnh tạo Project
@@ -6,11 +7,19 @@ $ npm start web
 $ npm install react-native-screens react-native-safe-area-context
 $ npm install @react-navigation/native-stack
 $ npm install react-native-screens react-native-safe-area-context
+* 
 
 * Mục tiêu tiếp theo:
     - Cho phép người dùng nhập và lưu dữ liệu
     - Tạo footer (Tùy chọn)
 
-Ngày 02/08/2024 11:35
+Ngày 02/08/2024 
+    11:35
 * Do file APK lớn hơn 100MB nên không up lên GitHub (Hướng xử lý tạm thời: bỏ qua, hướng xử lý tương lai: chuyển sang sử dụng Git lfs)
 * Phát hiện ra mình đã lưu nhầm App.js (DMCD)
+
+    21:06
+* Có TextInput, InfoScreen
+* Đã merge branch tien vào branch main
+* Tạo thêm branch lam
+* 
