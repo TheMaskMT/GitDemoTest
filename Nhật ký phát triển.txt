@@ -1,0 +1,12 @@
+Ngày 01/08/2024 16:24
+* Lưu ý sau khi tạo project và cài bằng các câu lệnh sau
+$ npm install -g expo-cli
+$ expo init HeaderTest //Câu lệnh tạo Project
+$ npm start web
+$ npm install react-native-screens react-native-safe-area-context
+$ npm install @react-navigation/native-stack
+$ npm install react-native-screens react-native-safe-area-context
+
+* Mục tiêu tiếp theo:
+    - Cho phép người dùng nhập và lưu dữ liệu
+    - Tạo footer (Tùy chọn)
