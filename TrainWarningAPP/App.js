@@ -1,29 +1,38 @@
+import * as React from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { BackYardScreen } from './src/components/backyard';
+import { HomeScreen, sayGoodbye } from './src/components/header';
+
+const Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text style={styles.begin}>This is the begin.</Text>
-      <Text>This is the begin.</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name = "Home" component={HomeScreen}></Stack.Screen>
+      </Stack.Navigator>      
+    </NavigationContainer>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+sayGoodbye();
 
-  begin: {
-    fontSize: 36,
-    fontFamily: 'timenewroman',
-    fontWeight: 'bold',
-    alignItems: 'center',
-    justifyContent: 'center',
-  }
-});
+// const styles = StyleSheet.create({
+//   container: {
+//     flex: 1,
+//     backgroundColor: '#fff',
+//     alignItems: 'center',
+//     justifyContent: 'center',
+//   },
+
+//   begin: {
+//     fontSize: 36,
+//     fontFamily: 'timenewroman',
+//     fontWeight: 'bold',
+//     alignItems: 'center',
+//     justifyContent: 'center',
+//   }
+// });

@@ -1,6 +1,6 @@
-Thu thập dữ liệu thông tin tàu hỏa
-Tọa độ 
-Hình ảnh 
+Thu thập dữ liệu thông tin điểm giao tàu hỏa
+Tọa độ
+Hình ảnh
 Ttlq
 Thời gian tàu chạy
 Thể hiện trên bản đồ (web, mobile)

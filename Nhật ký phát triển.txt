@@ -10,3 +10,7 @@ $ npm install react-native-screens react-native-safe-area-context
 * Mục tiêu tiếp theo:
     - Cho phép người dùng nhập và lưu dữ liệu
     - Tạo footer (Tùy chọn)
+
+Ngày 02/08/2024 11:35
+* Do file APK lớn hơn 100MB nên không up lên GitHub (Hướng xử lý tạm thời: bỏ qua, hướng xử lý tương lai: chuyển sang sử dụng Git lfs)
+* Phát hiện ra mình đã lưu nhầm App.js (DMCD)
