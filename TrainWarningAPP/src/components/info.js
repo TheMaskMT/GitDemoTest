@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { Button, StyleSheet, Text, TextInput, View } from 'react-native';
-import { get } from 'react-native/Libraries/TurboModule/TurboModuleRegistry';
+import { StyleSheet, Text, TextInput, View } from 'react-native';
 
 
 
@@ -16,18 +15,12 @@ export function InfoScreen(){
         value={text}
       />
       <br/>
-      <Button title='Lưu' onPress = {() => navigation.navigate('Home')}/>
+      <Button title='Lưu' onPress = {() => navigation.navigate('Info')}/>
       <Text> Giá trị bạn vừa nhập là: {text}</Text>
        <StatusBar style="auto" />
     </View>
   );
 }
-
-// function saveInfo() {
-//   navigation.navigate('Home')
-//   //TextInputValue = document.getElementsByName('TextValue').value
-//   //console.log(TextInputValue)
-// }
 
 const styles = StyleSheet.create({
   container: {
