@@ -22,4 +22,15 @@ Ngày 02/08/2024
 * Có TextInput, InfoScreen
 * Đã merge branch tien vào branch main
 * Tạo thêm branch lam
-* 
+
+Ngày 05/08/2024
+    09:12
+* Các mục tiêu: 
+    - Lưu trữ được dữ liệu từ TextInput (Ưu tiên lưu trữ vào MySQL)
+    - Lấy GPS của mobile
+    - Tạo form nhập cho InfoScreen
+
+    14:19
+* Giải pháp lưu trữ chưa rõ.
+* Đang tìm cách lấy GPS của Mobile
+* Form nhập vẫn chưa thể triển khai
