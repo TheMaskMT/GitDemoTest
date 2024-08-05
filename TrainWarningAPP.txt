@@ -1,8 +1,12 @@
 Thu thập dữ liệu thông tin điểm giao tàu hỏa
-Tọa độ
-Hình ảnh
-Ttlq
-Thời gian tàu chạy
+Các trường thông tin:
+Tên (string)
+Tọa độ (string)
+Hình ảnh (?)
+Ttlq (string)
+Thời gian tàu chạy (Array)
+
+
 Thể hiện trên bản đồ (web, mobile)
 
 Mobile thì lấy GPS

@@ -34,3 +34,12 @@ Ngày 05/08/2024
 * Giải pháp lưu trữ chưa rõ.
 * Đang tìm cách lấy GPS của Mobile
 * Form nhập vẫn chưa thể triển khai
+
+    17:45
+* Dự kiến các screen 
+    - Screen 1: Đăng nhập/Đăng ký
+    - Screen 2: Trang chủ
+    - Screen 3: Admin (nhập thông tin)
+    - Screen 4: User xem bản đồ
+    - Screen 5: Xem vị trí bản thân + Cảnh báo (Nếu được: Khuyến khích cảnh báo bằng thông báo)
+

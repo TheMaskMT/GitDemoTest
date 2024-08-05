@@ -1,6 +1,8 @@
 import * as React from 'react';
+import { useEffect } from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { Button, StyleSheet, Text, View, Image } from 'react-native';
+import { StyleSheet, Text, View, Image, Pressable } from 'react-native';
+import GeoLocation from '@react-native-community/geolocation'
 
 export function sayHello(){
   console.log("Hello, world!");
@@ -26,11 +28,19 @@ export function HeaderLogo()
 }
 
 export function HomeScreen({navigation}){
+  useEffect(() => {
+    GeoLocation.getCurrentPosition(position =>{
+      console.log(position);
+    });
+  }, []);
+  
   return(
     <View style={styles.container}>
         <Text style={{padding: 5, fontSize: 22}}>Nhấn nút để nhập dữ liệu!</Text>
         <br/>
-        <Button title='Nhập dữ liệu' onPress = {() => navigation.navigate('Info')}/>
+        <Pressable title='Nhập dữ liệu' onPress = {() => navigation.navigate('Info')}>
+          <Text style={styles.button}>Nhập dữ liệu</Text>  
+        </Pressable>
         <StatusBar style="auto" />
       </View>
   );
@@ -43,4 +53,12 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  button: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: 'darkblue',
+    padding: '5px',
+    borderColor: 'green',
+    color: 'white',
+  }
 });

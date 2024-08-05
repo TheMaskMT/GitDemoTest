@@ -6,13 +6,14 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { InfoScreen } from './src/components/info';
 import { HomeScreen, sayGoodbye, HeaderLogo } from './src/components/header';
 
+
 const Stack = createNativeStackNavigator();
 
-export default function App() {
-  return (
+export default function App() {  
+  return ( 
     <NavigationContainer>
       <Stack.Navigator 
-      initialRouteName="Home"
+      initialRouteName="HomeTest"
       screenOptions={{
           headerStyle: {
             backgroundColor: 'orange',
