@@ -43,3 +43,6 @@ Ngày 05/08/2024
     - Screen 4: User xem bản đồ
     - Screen 5: Xem vị trí bản thân + Cảnh báo (Nếu được: Khuyến khích cảnh báo bằng thông báo)
 
+Ngày 07/08/2024
+    11:22
+    Chức năng bản đồ nếu kéo API thì đang yêu cầu phải có thẻ visa (đang tìm hướng khác)
