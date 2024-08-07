@@ -4,36 +4,10 @@ import { StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { InfoScreen } from './src/components/info';
-import { HomeScreen, HeaderLogo } from './src/components/header';
+import { HomeScreen, sayGoodbye, HeaderLogo } from './src/components/header';
 
-// import './App.css'
-// import Map from './src/components/map'
 
 const Stack = createNativeStackNavigator();
-
-
-// function App() {
-//   const key = 'AIzaSyDNI_ZWPqvdS6r6gPVO50I4TlYkfkZdXh8'
-
-//   return (
-//     <div className="App">
-//           <header>
-//             Map Demo
-//           </header>
-//           <div>
-            
-//           </div>
-//           {/* <Map 
-//             googleMapURL={`https://maps.googleapis.com/maps/api/js?key=${key}&callback=initMap`}
-//             loadingElement={<div style={{ height: `100%`, width: '100%' }} />}
-//             containerElement={<div style={{ height: `90vh`, margin: `auto`, border: '2px solid black' }} />}
-//             mapElement={<div style={{ height: `100%` }} />}
-//           /> */}
-//     </div>
-//   );
-// }
-
-// export default App;
 
 export default function App() {  
   return ( 
@@ -57,19 +31,19 @@ export default function App() {
 }
 
 
-// // const styles = StyleSheet.create({
-// //   container: {
-// //     flex: 1,
-// //     backgroundColor: '#fff',
-// //     alignItems: 'center',
-// //     justifyContent: 'center',
-// //   },
+// const styles = StyleSheet.create({
+//   container: {
+//     flex: 1,
+//     backgroundColor: '#fff',
+//     alignItems: 'center',
+//     justifyContent: 'center',
+//   },
 
-// //   begin: {
-// //     fontSize: 36,
-// //     fontFamily: 'timenewroman',
-// //     fontWeight: 'bold',
-// //     alignItems: 'center',
-// //     justifyContent: 'center',
-// //   }
-// // });
+//   begin: {
+//     fontSize: 36,
+//     fontFamily: 'timenewroman',
+//     fontWeight: 'bold',
+//     alignItems: 'center',
+//     justifyContent: 'center',
+//   }
+// });
