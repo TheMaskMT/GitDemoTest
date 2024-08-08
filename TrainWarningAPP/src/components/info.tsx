@@ -1,21 +1,26 @@
 import * as React from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { Pressable, StyleSheet, Text, TextInput, View } from 'react-native';
+import { storeData, getData } from './datastorage';
 
 
-export function InfoTestScreen({navigation}){
+export function InfoScreen({navigation}){
   const [text, onChangeText] = React.useState('Useless Text');
   // const [number, onChangeNumber] = React.useState('');
   return(
     <View style={styles.container}>
       <Text style={{padding: 5, fontSize: 22}}>Nơi nhập dữ liệu.</Text>
-      <TextInput style={styles.input}
+      <TextInput 
+        style={styles.input}
         onChangeText={onChangeText}
         value={text}
       />
-
-      <Pressable title='Lưu' onPress = {() => navigation.navigate('Home')}>
+   
+      <Pressable onPress = {() => storeData('2', text)}>
       <Text style={styles.button}>Lưu</Text>
+      </Pressable>
+      <Pressable onPress = {() => getData('2')}>
+      <Text style={styles.button}>Đọc</Text>
       </Pressable>
       <Text> Giá trị bạn vừa nhập là: {text}</Text>
        <StatusBar style="auto" />
@@ -44,7 +49,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: 'darkblue',
-    padding: '10px',
+    padding: 10,
     color: 'white',
     // borderRadius: '10px'
   }

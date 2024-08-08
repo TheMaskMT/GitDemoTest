@@ -6,3 +6,5 @@ src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Hu
 
 <a href="https://www.gps.ie/">gps tracker sport</a></iframe></div>
 <a href="https://www.gps.ie/">gps trackers</a></iframe></div>
+
+https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=37.7749,%20-122.4194(My%20Place)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed
