@@ -1,6 +1,6 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-3    package="com.anonymous.TrainWarningAPP"
+3    package="com.anonymous.TrainWaringAPP"
 4    android:versionCode="1"
 5    android:versionName="1.0.0" >
 6
@@ -23,185 +23,221 @@
 15    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 15-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:6:3-78
 15-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:6:20-76
-16
-17    <queries>
-17-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:7:3-13:13
-18        <intent>
-18-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:8:5-12:14
-19            <action android:name="android.intent.action.VIEW" />
-19-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:9:7-58
-19-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:9:15-56
-20
-21            <category android:name="android.intent.category.BROWSABLE" />
-21-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:10:7-67
-21-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:10:17-65
-22
-23            <data android:scheme="https" />
-23-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:11:7-37
-23-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:11:13-35
-24        </intent>
-25        <!-- Query open documents -->
-26        <intent>
-26-->[:expo-file-system] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\expo-file-system\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:15:9-17:18
-27            <action android:name="android.intent.action.OPEN_DOCUMENT_TREE" />
-27-->[:expo-file-system] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\expo-file-system\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:16:13-79
-27-->[:expo-file-system] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\expo-file-system\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:16:21-76
-28        </intent>
-29    </queries>
-30
-31    <permission
-31-->[androidx.core:core:1.12.0] C:\Users\MaskMT\.gradle\caches\transforms-4\c86d9d1f180fe0343a88fda494f828ef\transformed\core-1.12.0\AndroidManifest.xml:22:5-24:47
-32        android:name="com.anonymous.TrainWarningAPP.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-32-->[androidx.core:core:1.12.0] C:\Users\MaskMT\.gradle\caches\transforms-4\c86d9d1f180fe0343a88fda494f828ef\transformed\core-1.12.0\AndroidManifest.xml:23:9-81
-33        android:protectionLevel="signature" />
-33-->[androidx.core:core:1.12.0] C:\Users\MaskMT\.gradle\caches\transforms-4\c86d9d1f180fe0343a88fda494f828ef\transformed\core-1.12.0\AndroidManifest.xml:24:9-44
-34
-35    <uses-permission android:name="com.anonymous.TrainWarningAPP.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-35-->[androidx.core:core:1.12.0] C:\Users\MaskMT\.gradle\caches\transforms-4\c86d9d1f180fe0343a88fda494f828ef\transformed\core-1.12.0\AndroidManifest.xml:26:5-97
-35-->[androidx.core:core:1.12.0] C:\Users\MaskMT\.gradle\caches\transforms-4\c86d9d1f180fe0343a88fda494f828ef\transformed\core-1.12.0\AndroidManifest.xml:26:22-94
-36
-37    <application
-37-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:14:3-31:17
-38        android:name="com.anonymous.TrainWarningAPP.MainApplication"
-38-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:14:16-47
-39        android:allowBackup="true"
-39-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:14:162-188
-40        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-40-->[androidx.core:core:1.12.0] C:\Users\MaskMT\.gradle\caches\transforms-4\c86d9d1f180fe0343a88fda494f828ef\transformed\core-1.12.0\AndroidManifest.xml:28:18-86
-41        android:debuggable="true"
-42        android:extractNativeLibs="false"
-43        android:icon="@mipmap/ic_launcher"
-43-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:14:81-115
-44        android:label="@string/app_name"
-44-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:14:48-80
-45        android:roundIcon="@mipmap/ic_launcher_round"
-45-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:14:116-161
-46        android:theme="@style/AppTheme"
-46-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:14:189-220
-47        android:usesCleartextTraffic="true" >
-47-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\debug\AndroidManifest.xml:6:18-53
-48        <meta-data
-48-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:15:5-83
-49            android:name="expo.modules.updates.ENABLED"
-49-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:15:16-59
-50            android:value="false" />
-50-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:15:60-81
-51        <meta-data
-51-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:16:5-105
-52            android:name="expo.modules.updates.EXPO_UPDATES_CHECK_ON_LAUNCH"
-52-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:16:16-80
-53            android:value="ALWAYS" />
-53-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:16:81-103
-54        <meta-data
-54-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:17:5-99
-55            android:name="expo.modules.updates.EXPO_UPDATES_LAUNCH_WAIT_MS"
-55-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:17:16-79
-56            android:value="0" />
-56-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:17:80-97
-57
-58        <activity
-58-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:18:5-29:16
-59            android:name="com.anonymous.TrainWarningAPP.MainActivity"
-59-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:18:15-43
-60            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|uiMode"
-60-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:18:44-134
-61            android:exported="true"
-61-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:18:256-279
-62            android:launchMode="singleTask"
-62-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:18:135-166
-63            android:screenOrientation="portrait"
-63-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:18:280-316
-64            android:theme="@style/Theme.App.SplashScreen"
-64-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:18:210-255
-65            android:windowSoftInputMode="adjustResize" >
-65-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:18:167-209
-66            <intent-filter>
-66-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:19:7-22:23
-67                <action android:name="android.intent.action.MAIN" />
-67-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:20:9-60
-67-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:20:17-58
-68
-69                <category android:name="android.intent.category.LAUNCHER" />
-69-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:21:9-68
-69-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:21:19-66
-70            </intent-filter>
-71            <intent-filter>
-71-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:23:7-28:23
-72                <action android:name="android.intent.action.VIEW" />
-72-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:9:7-58
-72-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:9:15-56
-73
-74                <category android:name="android.intent.category.DEFAULT" />
-74-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:25:9-67
-74-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:25:19-65
-75                <category android:name="android.intent.category.BROWSABLE" />
-75-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:10:7-67
-75-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:10:17-65
-76
-77                <data android:scheme="com.anonymous.TrainWarningAPP" />
-77-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:11:7-37
-77-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:11:13-35
-78            </intent-filter>
-79        </activity>
-80        <activity
-80-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:30:5-106
-81            android:name="com.facebook.react.devsupport.DevSettingsActivity"
-81-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:30:15-79
-82            android:exported="false" />
-82-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:30:80-104
-83
-84        <provider
-84-->[:expo-file-system] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\expo-file-system\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:21:9-30:20
-85            android:name="expo.modules.filesystem.FileSystemFileProvider"
-85-->[:expo-file-system] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\expo-file-system\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:22:13-74
-86            android:authorities="com.anonymous.TrainWarningAPP.FileSystemFileProvider"
-86-->[:expo-file-system] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\expo-file-system\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:23:13-74
-87            android:exported="false"
-87-->[:expo-file-system] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\expo-file-system\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:24:13-37
-88            android:grantUriPermissions="true" >
-88-->[:expo-file-system] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\expo-file-system\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:25:13-47
-89            <meta-data
-89-->[:expo-file-system] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\expo-file-system\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:27:13-29:70
-90                android:name="android.support.FILE_PROVIDER_PATHS"
-90-->[:expo-file-system] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\expo-file-system\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:28:17-67
-91                android:resource="@xml/file_system_provider_paths" />
-91-->[:expo-file-system] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\expo-file-system\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:29:17-67
-92        </provider>
-93
-94        <meta-data
-94-->[:expo-modules-core] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\expo-modules-core\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:9-11:89
-95            android:name="org.unimodules.core.AppLoader#react-native-headless"
-95-->[:expo-modules-core] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\expo-modules-core\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-79
-96            android:value="expo.modules.adapters.react.apploader.RNHeadlessAppLoader" />
-96-->[:expo-modules-core] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\expo-modules-core\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-86
-97        <meta-data
-97-->[:expo-modules-core] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\expo-modules-core\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:12:9-15:45
-98            android:name="com.facebook.soloader.enabled"
-98-->[:expo-modules-core] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\expo-modules-core\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-57
-99            android:value="true" />
-99-->[:expo-modules-core] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\expo-modules-core\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-33
-100
-101        <provider
-101-->[androidx.emoji2:emoji2:1.2.0] C:\Users\MaskMT\.gradle\caches\transforms-4\fc5e80a564e50f7e087f843e40b1b519\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
-102            android:name="androidx.startup.InitializationProvider"
-102-->[androidx.emoji2:emoji2:1.2.0] C:\Users\MaskMT\.gradle\caches\transforms-4\fc5e80a564e50f7e087f843e40b1b519\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
-103            android:authorities="com.anonymous.TrainWarningAPP.androidx-startup"
-103-->[androidx.emoji2:emoji2:1.2.0] C:\Users\MaskMT\.gradle\caches\transforms-4\fc5e80a564e50f7e087f843e40b1b519\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
-104            android:exported="false" >
-104-->[androidx.emoji2:emoji2:1.2.0] C:\Users\MaskMT\.gradle\caches\transforms-4\fc5e80a564e50f7e087f843e40b1b519\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
-105            <meta-data
-105-->[androidx.emoji2:emoji2:1.2.0] C:\Users\MaskMT\.gradle\caches\transforms-4\fc5e80a564e50f7e087f843e40b1b519\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-106                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-106-->[androidx.emoji2:emoji2:1.2.0] C:\Users\MaskMT\.gradle\caches\transforms-4\fc5e80a564e50f7e087f843e40b1b519\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
-107                android:value="androidx.startup" />
-107-->[androidx.emoji2:emoji2:1.2.0] C:\Users\MaskMT\.gradle\caches\transforms-4\fc5e80a564e50f7e087f843e40b1b519\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
-108            <meta-data
-108-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\MaskMT\.gradle\caches\transforms-4\c279859521e908ec9f1b95ff0bfba2a6\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
-109                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-109-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\MaskMT\.gradle\caches\transforms-4\c279859521e908ec9f1b95ff0bfba2a6\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
-110                android:value="androidx.startup" />
-110-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\MaskMT\.gradle\caches\transforms-4\c279859521e908ec9f1b95ff0bfba2a6\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
-111        </provider>
-112    </application>
-113
-114</manifest>
+16    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+16-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:7:3-76
+16-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:7:20-74
+17
+18    <queries>
+18-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:8:3-14:13
+19        <intent>
+19-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:9:5-13:14
+20            <action android:name="android.intent.action.VIEW" />
+20-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:10:7-58
+20-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:10:15-56
+21
+22            <category android:name="android.intent.category.BROWSABLE" />
+22-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:11:7-67
+22-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:11:17-65
+23
+24            <data android:scheme="https" />
+24-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:12:7-37
+24-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:12:13-35
+25        </intent>
+26        <!-- Query open documents -->
+27        <intent>
+27-->[:expo-file-system] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\expo-file-system\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:15:9-17:18
+28            <action android:name="android.intent.action.OPEN_DOCUMENT_TREE" />
+28-->[:expo-file-system] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\expo-file-system\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:16:13-79
+28-->[:expo-file-system] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\expo-file-system\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:16:21-76
+29        </intent>
+30    </queries>
+31
+32    <permission
+32-->[androidx.core:core:1.12.0] C:\Users\MaskMT\.gradle\caches\transforms-4\c86d9d1f180fe0343a88fda494f828ef\transformed\core-1.12.0\AndroidManifest.xml:22:5-24:47
+33        android:name="com.anonymous.TrainWaringAPP.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+33-->[androidx.core:core:1.12.0] C:\Users\MaskMT\.gradle\caches\transforms-4\c86d9d1f180fe0343a88fda494f828ef\transformed\core-1.12.0\AndroidManifest.xml:23:9-81
+34        android:protectionLevel="signature" />
+34-->[androidx.core:core:1.12.0] C:\Users\MaskMT\.gradle\caches\transforms-4\c86d9d1f180fe0343a88fda494f828ef\transformed\core-1.12.0\AndroidManifest.xml:24:9-44
+35
+36    <uses-permission android:name="com.anonymous.TrainWaringAPP.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+36-->[androidx.core:core:1.12.0] C:\Users\MaskMT\.gradle\caches\transforms-4\c86d9d1f180fe0343a88fda494f828ef\transformed\core-1.12.0\AndroidManifest.xml:26:5-97
+36-->[androidx.core:core:1.12.0] C:\Users\MaskMT\.gradle\caches\transforms-4\c86d9d1f180fe0343a88fda494f828ef\transformed\core-1.12.0\AndroidManifest.xml:26:22-94
+37
+38    <application
+38-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:15:3-32:17
+39        android:name="com.anonymous.TrainWaringAPP.MainApplication"
+39-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:15:16-47
+40        android:allowBackup="true"
+40-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:15:162-188
+41        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+41-->[androidx.core:core:1.12.0] C:\Users\MaskMT\.gradle\caches\transforms-4\c86d9d1f180fe0343a88fda494f828ef\transformed\core-1.12.0\AndroidManifest.xml:28:18-86
+42        android:debuggable="true"
+43        android:extractNativeLibs="false"
+44        android:icon="@mipmap/ic_launcher"
+44-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:15:81-115
+45        android:label="@string/app_name"
+45-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:15:48-80
+46        android:roundIcon="@mipmap/ic_launcher_round"
+46-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:15:116-161
+47        android:theme="@style/AppTheme"
+47-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:15:189-220
+48        android:usesCleartextTraffic="true" >
+48-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\debug\AndroidManifest.xml:6:18-53
+49        <meta-data
+49-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:16:5-83
+50            android:name="expo.modules.updates.ENABLED"
+50-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:16:16-59
+51            android:value="false" />
+51-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:16:60-81
+52        <meta-data
+52-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:17:5-105
+53            android:name="expo.modules.updates.EXPO_UPDATES_CHECK_ON_LAUNCH"
+53-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:17:16-80
+54            android:value="ALWAYS" />
+54-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:17:81-103
+55        <meta-data
+55-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:18:5-99
+56            android:name="expo.modules.updates.EXPO_UPDATES_LAUNCH_WAIT_MS"
+56-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:18:16-79
+57            android:value="0" />
+57-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:18:80-97
+58
+59        <activity
+59-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:19:5-30:16
+60            android:name="com.anonymous.TrainWaringAPP.MainActivity"
+60-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:19:15-43
+61            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|uiMode"
+61-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:19:44-134
+62            android:exported="true"
+62-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:19:256-279
+63            android:launchMode="singleTask"
+63-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:19:135-166
+64            android:screenOrientation="portrait"
+64-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:19:280-316
+65            android:theme="@style/Theme.App.SplashScreen"
+65-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:19:210-255
+66            android:windowSoftInputMode="adjustResize" >
+66-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:19:167-209
+67            <intent-filter>
+67-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:20:7-23:23
+68                <action android:name="android.intent.action.MAIN" />
+68-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:21:9-60
+68-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:21:17-58
+69
+70                <category android:name="android.intent.category.LAUNCHER" />
+70-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:22:9-68
+70-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:22:19-66
+71            </intent-filter>
+72            <intent-filter>
+72-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:24:7-29:23
+73                <action android:name="android.intent.action.VIEW" />
+73-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:10:7-58
+73-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:10:15-56
+74
+75                <category android:name="android.intent.category.DEFAULT" />
+75-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:26:9-67
+75-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:26:19-65
+76                <category android:name="android.intent.category.BROWSABLE" />
+76-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:11:7-67
+76-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:11:17-65
+77
+78                <data android:scheme="com.anonymous.TrainWaringAPP" />
+78-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:12:7-37
+78-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:12:13-35
+79            </intent-filter>
+80        </activity>
+81        <activity
+81-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:31:5-106
+82            android:name="com.facebook.react.devsupport.DevSettingsActivity"
+82-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:31:15-79
+83            android:exported="false" />
+83-->D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:31:80-104
+84
+85        <provider
+85-->[:react-native-webview] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:8:9-16:20
+86            android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider"
+86-->[:react-native-webview] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-83
+87            android:authorities="com.anonymous.TrainWaringAPP.fileprovider"
+87-->[:react-native-webview] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-64
+88            android:exported="false"
+88-->[:react-native-webview] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-37
+89            android:grantUriPermissions="true" >
+89-->[:react-native-webview] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-47
+90            <meta-data
+90-->[:react-native-webview] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-15:63
+91                android:name="android.support.FILE_PROVIDER_PATHS"
+91-->[:react-native-webview] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:14:17-67
+92                android:resource="@xml/file_provider_paths" />
+92-->[:react-native-webview] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:15:17-60
+93        </provider>
+94        <provider
+94-->[:expo-file-system] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\expo-file-system\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:21:9-30:20
+95            android:name="expo.modules.filesystem.FileSystemFileProvider"
+95-->[:expo-file-system] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\expo-file-system\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:22:13-74
+96            android:authorities="com.anonymous.TrainWaringAPP.FileSystemFileProvider"
+96-->[:expo-file-system] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\expo-file-system\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:23:13-74
+97            android:exported="false"
+97-->[:expo-file-system] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\expo-file-system\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:24:13-37
+98            android:grantUriPermissions="true" >
+98-->[:expo-file-system] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\expo-file-system\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:25:13-47
+99            <meta-data
+99-->[:react-native-webview] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-15:63
+100                android:name="android.support.FILE_PROVIDER_PATHS"
+100-->[:react-native-webview] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:14:17-67
+101                android:resource="@xml/file_system_provider_paths" />
+101-->[:react-native-webview] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:15:17-60
+102        </provider>
+103
+104        <meta-data
+104-->[:expo-modules-core] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\expo-modules-core\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:9-11:89
+105            android:name="org.unimodules.core.AppLoader#react-native-headless"
+105-->[:expo-modules-core] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\expo-modules-core\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-79
+106            android:value="expo.modules.adapters.react.apploader.RNHeadlessAppLoader" />
+106-->[:expo-modules-core] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\expo-modules-core\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-86
+107        <meta-data
+107-->[:expo-modules-core] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\expo-modules-core\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:12:9-15:45
+108            android:name="com.facebook.soloader.enabled"
+108-->[:expo-modules-core] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\expo-modules-core\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-57
+109            android:value="true" />
+109-->[:expo-modules-core] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\expo-modules-core\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-33
+110
+111        <activity
+111-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\MaskMT\.gradle\caches\transforms-4\b553aec776d63ad0400d20f31abd30d5\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
+112            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+112-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\MaskMT\.gradle\caches\transforms-4\b553aec776d63ad0400d20f31abd30d5\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:19-85
+113            android:exported="false"
+113-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\MaskMT\.gradle\caches\transforms-4\b553aec776d63ad0400d20f31abd30d5\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:22:19-43
+114            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+114-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\MaskMT\.gradle\caches\transforms-4\b553aec776d63ad0400d20f31abd30d5\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:21:19-78
+115
+116        <meta-data
+116-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\MaskMT\.gradle\caches\transforms-4\bc6d6f67de31a1f674e3be91de9f4179\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+117            android:name="com.google.android.gms.version"
+117-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\MaskMT\.gradle\caches\transforms-4\bc6d6f67de31a1f674e3be91de9f4179\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+118            android:value="@integer/google_play_services_version" />
+118-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\MaskMT\.gradle\caches\transforms-4\bc6d6f67de31a1f674e3be91de9f4179\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+119
+120        <provider
+120-->[androidx.emoji2:emoji2:1.2.0] C:\Users\MaskMT\.gradle\caches\transforms-4\fc5e80a564e50f7e087f843e40b1b519\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+121            android:name="androidx.startup.InitializationProvider"
+121-->[androidx.emoji2:emoji2:1.2.0] C:\Users\MaskMT\.gradle\caches\transforms-4\fc5e80a564e50f7e087f843e40b1b519\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+122            android:authorities="com.anonymous.TrainWaringAPP.androidx-startup"
+122-->[androidx.emoji2:emoji2:1.2.0] C:\Users\MaskMT\.gradle\caches\transforms-4\fc5e80a564e50f7e087f843e40b1b519\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+123            android:exported="false" >
+123-->[androidx.emoji2:emoji2:1.2.0] C:\Users\MaskMT\.gradle\caches\transforms-4\fc5e80a564e50f7e087f843e40b1b519\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+124            <meta-data
+124-->[androidx.emoji2:emoji2:1.2.0] C:\Users\MaskMT\.gradle\caches\transforms-4\fc5e80a564e50f7e087f843e40b1b519\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+125                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+125-->[androidx.emoji2:emoji2:1.2.0] C:\Users\MaskMT\.gradle\caches\transforms-4\fc5e80a564e50f7e087f843e40b1b519\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+126                android:value="androidx.startup" />
+126-->[androidx.emoji2:emoji2:1.2.0] C:\Users\MaskMT\.gradle\caches\transforms-4\fc5e80a564e50f7e087f843e40b1b519\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+127            <meta-data
+127-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\MaskMT\.gradle\caches\transforms-4\c279859521e908ec9f1b95ff0bfba2a6\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+128                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+128-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\MaskMT\.gradle\caches\transforms-4\c279859521e908ec9f1b95ff0bfba2a6\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+129                android:value="androidx.startup" />
+129-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\MaskMT\.gradle\caches\transforms-4\c279859521e908ec9f1b95ff0bfba2a6\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+130        </provider>
+131    </application>
+132
+133</manifest>

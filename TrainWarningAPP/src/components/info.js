@@ -16,7 +16,7 @@ export function InfoScreen({navigation}){
         onChangeText={onChangeText}
         value={text}
       />
-      <br/>
+   
       <Pressable title='Lưu' onPress = {() => storeData('2', text)}>
       <Text style={styles.button}>Lưu</Text>
       </Pressable>
@@ -52,6 +52,6 @@ const styles = StyleSheet.create({
     backgroundColor: 'darkblue',
     padding: '10px',
     color: 'white',
-    borderRadius: '10px'
+    // borderRadius: '10px'
   }
 });

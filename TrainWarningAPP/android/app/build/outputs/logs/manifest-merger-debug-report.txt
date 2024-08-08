@@ -1,14 +1,16 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:1:1-32:12
-MERGED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:1:1-32:12
+ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:1:1-33:12
+MERGED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:1:1-33:12
 INJECTED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\debug\AndroidManifest.xml:1:1-7:12
 INJECTED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\debug\AndroidManifest.xml:1:1-7:12
 INJECTED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\debug\AndroidManifest.xml:1:1-7:12
+MERGED from [:react-native-async-storage_async-storage] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\@react-native-async-storage\async-storage\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:react-native-community_geolocation] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\@react-native-community\geolocation\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:expo] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\expo\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:react-native-safe-area-context] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\react-native-safe-area-context\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:react-native-screens] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\react-native-screens\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
-MERGED from [:react-native-vector-icons] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\react-native-vector-icons\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:react-native-webview] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-19:12
 MERGED from [:expo-asset] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\expo-asset\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:expo-constants] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\expo-constants\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:expo-file-system] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\expo-file-system\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-33:12
@@ -21,6 +23,10 @@ MERGED from [com.google.android.material:material:1.6.1] C:\Users\MaskMT\.gradle
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\MaskMT\.gradle\caches\transforms-4\d0a95bd83dab62b850b8912c67004d82\transformed\constraintlayout-2.0.1\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat:1.6.1] C:\Users\MaskMT\.gradle\caches\transforms-4\75082bdd4d8937d749b66860ace123c3\transformed\appcompat-1.6.1\AndroidManifest.xml:17:1-22:12
 MERGED from [com.facebook.fresco:imagepipeline-okhttp3:3.1.3] C:\Users\MaskMT\.gradle\caches\transforms-4\3798e971e5690e2c5cd28a3bdb382e64\transformed\jetified-imagepipeline-okhttp3-3.1.3\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-location:21.0.1] C:\Users\MaskMT\.gradle\caches\transforms-4\0921f91188a9d7d46e419592ef8e860e\transformed\jetified-play-services-location-21.0.1\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-base:18.1.0] C:\Users\MaskMT\.gradle\caches\transforms-4\b553aec776d63ad0400d20f31abd30d5\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:16:1-24:12
+MERGED from [com.google.android.gms:play-services-tasks:18.0.2] C:\Users\MaskMT\.gradle\caches\transforms-4\c2e89c88aea2041af98848191aae5c5d\transformed\jetified-play-services-tasks-18.0.2\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-basement:18.1.0] C:\Users\MaskMT\.gradle\caches\transforms-4\bc6d6f67de31a1f674e3be91de9f4179\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:16:1-26:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\MaskMT\.gradle\caches\transforms-4\2e4cc22200590955c444e5266b98d5ff\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\MaskMT\.gradle\caches\transforms-4\ebe1448faf80a1498f821d741ab5be1c\transformed\jetified-viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\MaskMT\.gradle\caches\transforms-4\d3f234539f95270bdf12008128bd4687\transformed\fragment-1.3.6\AndroidManifest.xml:17:1-24:12
@@ -55,6 +61,7 @@ MERGED from [com.facebook.fresco:vito-renderer:3.1.3] C:\Users\MaskMT\.gradle\ca
 MERGED from [androidx.autofill:autofill:1.1.0] C:\Users\MaskMT\.gradle\caches\transforms-4\87067f6929aef9d0fd7e64427b866617\transformed\jetified-autofill-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] C:\Users\MaskMT\.gradle\caches\transforms-4\f007f00dbd02a21f8b593d76203ac68e\transformed\swiperefreshlayout-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.2.0] C:\Users\MaskMT\.gradle\caches\transforms-4\849c9b0f1d7a1f28599af97f569c9c57\transformed\coordinatorlayout-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.webkit:webkit:1.4.0] C:\Users\MaskMT\.gradle\caches\transforms-4\7e3b1e1bd7356e25b89fa07b31da23d7\transformed\webkit-1.4.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] C:\Users\MaskMT\.gradle\caches\transforms-4\34233f0056272bda9ec725db63b25e61\transformed\jetified-emoji2-views-helper-1.2.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\MaskMT\.gradle\caches\transforms-4\fc5e80a564e50f7e087f843e40b1b519\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:17:1-35:12
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\MaskMT\.gradle\caches\transforms-4\b419b1808bfcbd08e08903aeff1a9b54\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
@@ -128,29 +135,35 @@ MERGED from [:expo-file-system] D:\TrainWarningProject\GitDemoTest\TrainWarningA
 MERGED from [:expo-file-system] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\expo-file-system\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-81
 	android:name
 		ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:6:20-76
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:7:3-76
+	android:name
+		ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:7:20-74
 queries
-ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:7:3-13:13
+ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:8:3-14:13
 MERGED from [:expo-file-system] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\expo-file-system\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:12:5-18:15
 MERGED from [:expo-file-system] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\expo-file-system\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:12:5-18:15
 intent#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+data:scheme:https
-ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:8:5-12:14
+ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:9:5-13:14
 action#android.intent.action.VIEW
-ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:9:7-58
+ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:10:7-58
 	android:name
-		ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:9:15-56
+		ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:10:15-56
 category#android.intent.category.BROWSABLE
-ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:10:7-67
+ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:11:7-67
 	android:name
-		ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:10:17-65
+		ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:11:17-65
 data
-ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:11:7-37
+ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:12:7-37
 	android:scheme
-		ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:11:13-35
+		ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:12:13-35
 application
-ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:14:3-31:17
-MERGED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:14:3-31:17
-MERGED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:14:3-31:17
+ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:15:3-32:17
+MERGED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:15:3-32:17
+MERGED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:15:3-32:17
 INJECTED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\debug\AndroidManifest.xml:6:5-162
+MERGED from [:react-native-webview] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-17:19
+MERGED from [:react-native-webview] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-17:19
 MERGED from [:expo-file-system] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\expo-file-system\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:20:5-31:19
 MERGED from [:expo-file-system] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\expo-file-system\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:20:5-31:19
 MERGED from [:expo-modules-core] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\expo-modules-core\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:8:5-16:19
@@ -161,6 +174,14 @@ MERGED from [com.google.android.material:material:1.6.1] C:\Users\MaskMT\.gradle
 MERGED from [com.google.android.material:material:1.6.1] C:\Users\MaskMT\.gradle\caches\transforms-4\857b23f46bf6724091068241ad9db52e\transformed\material-1.6.1\AndroidManifest.xml:24:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\MaskMT\.gradle\caches\transforms-4\d0a95bd83dab62b850b8912c67004d82\transformed\constraintlayout-2.0.1\AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\MaskMT\.gradle\caches\transforms-4\d0a95bd83dab62b850b8912c67004d82\transformed\constraintlayout-2.0.1\AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.gms:play-services-location:21.0.1] C:\Users\MaskMT\.gradle\caches\transforms-4\0921f91188a9d7d46e419592ef8e860e\transformed\jetified-play-services-location-21.0.1\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:21.0.1] C:\Users\MaskMT\.gradle\caches\transforms-4\0921f91188a9d7d46e419592ef8e860e\transformed\jetified-play-services-location-21.0.1\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-base:18.1.0] C:\Users\MaskMT\.gradle\caches\transforms-4\b553aec776d63ad0400d20f31abd30d5\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.android.gms:play-services-base:18.1.0] C:\Users\MaskMT\.gradle\caches\transforms-4\b553aec776d63ad0400d20f31abd30d5\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.android.gms:play-services-tasks:18.0.2] C:\Users\MaskMT\.gradle\caches\transforms-4\c2e89c88aea2041af98848191aae5c5d\transformed\jetified-play-services-tasks-18.0.2\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tasks:18.0.2] C:\Users\MaskMT\.gradle\caches\transforms-4\c2e89c88aea2041af98848191aae5c5d\transformed\jetified-play-services-tasks-18.0.2\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement:18.1.0] C:\Users\MaskMT\.gradle\caches\transforms-4\bc6d6f67de31a1f674e3be91de9f4179\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.google.android.gms:play-services-basement:18.1.0] C:\Users\MaskMT\.gradle\caches\transforms-4\bc6d6f67de31a1f674e3be91de9f4179\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:20:5-24:19
 MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\MaskMT\.gradle\caches\transforms-4\fc5e80a564e50f7e087f843e40b1b519\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\MaskMT\.gradle\caches\transforms-4\fc5e80a564e50f7e087f843e40b1b519\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.core:core:1.12.0] C:\Users\MaskMT\.gradle\caches\transforms-4\c86d9d1f180fe0343a88fda494f828ef\transformed\core-1.12.0\AndroidManifest.xml:28:5-89
@@ -178,101 +199,105 @@ MERGED from [com.facebook.soloader:soloader:0.10.5] C:\Users\MaskMT\.gradle\cach
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.12.0] C:\Users\MaskMT\.gradle\caches\transforms-4\c86d9d1f180fe0343a88fda494f828ef\transformed\core-1.12.0\AndroidManifest.xml:28:18-86
 	android:label
-		ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:14:48-80
-		ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:14:48-80
+		ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:15:48-80
+		ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:15:48-80
 	tools:ignore
 		ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\debug\AndroidManifest.xml:6:75-114
 	android:roundIcon
-		ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:14:116-161
-		ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:14:116-161
+		ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:15:116-161
+		ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:15:116-161
 	tools:targetApi
 		ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\debug\AndroidManifest.xml:6:54-74
 	android:icon
-		ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:14:81-115
-		ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:14:81-115
+		ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:15:81-115
+		ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:15:81-115
 	android:allowBackup
-		ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:14:162-188
-		ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:14:162-188
+		ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:15:162-188
+		ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:15:162-188
 	android:theme
-		ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:14:189-220
-		ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:14:189-220
+		ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:15:189-220
+		ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:15:189-220
 	tools:replace
 		ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\debug\AndroidManifest.xml:6:115-159
 	android:usesCleartextTraffic
 		ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\debug\AndroidManifest.xml:6:18-53
 	android:name
-		ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:14:16-47
-		ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:14:16-47
+		ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:15:16-47
+		ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:15:16-47
 meta-data#expo.modules.updates.ENABLED
-ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:15:5-83
+ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:16:5-83
 	android:value
-		ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:15:60-81
+		ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:16:60-81
 	android:name
-		ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:15:16-59
+		ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:16:16-59
 meta-data#expo.modules.updates.EXPO_UPDATES_CHECK_ON_LAUNCH
-ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:16:5-105
+ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:17:5-105
 	android:value
-		ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:16:81-103
+		ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:17:81-103
 	android:name
-		ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:16:16-80
+		ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:17:16-80
 meta-data#expo.modules.updates.EXPO_UPDATES_LAUNCH_WAIT_MS
-ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:17:5-99
+ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:18:5-99
 	android:value
-		ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:17:80-97
+		ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:18:80-97
 	android:name
-		ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:17:16-79
-activity#com.anonymous.TrainWarningAPP.MainActivity
-ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:18:5-29:16
+		ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:18:16-79
+activity#com.anonymous.TrainWaringAPP.MainActivity
+ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:19:5-30:16
 	android:screenOrientation
-		ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:18:280-316
+		ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:19:280-316
 	android:launchMode
-		ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:18:135-166
+		ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:19:135-166
 	android:windowSoftInputMode
-		ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:18:167-209
+		ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:19:167-209
 	android:exported
-		ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:18:256-279
+		ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:19:256-279
 	android:configChanges
-		ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:18:44-134
+		ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:19:44-134
 	android:theme
-		ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:18:210-255
+		ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:19:210-255
 	android:name
-		ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:18:15-43
+		ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:19:15-43
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:19:7-22:23
+ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:20:7-23:23
 action#android.intent.action.MAIN
-ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:20:9-60
+ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:21:9-60
 	android:name
-		ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:20:17-58
+		ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:21:17-58
 category#android.intent.category.LAUNCHER
-ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:21:9-68
+ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:22:9-68
 	android:name
-		ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:21:19-66
-intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:scheme:com.anonymous.TrainWarningAPP
-ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:23:7-28:23
+		ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:22:19-66
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:scheme:com.anonymous.TrainWaringAPP
+ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:24:7-29:23
 category#android.intent.category.DEFAULT
-ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:25:9-67
+ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:26:9-67
 	android:name
-		ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:25:19-65
+		ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:26:19-65
 activity#com.facebook.react.devsupport.DevSettingsActivity
-ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:30:5-106
+ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:31:5-106
 MERGED from [com.facebook.react:react-android:0.74.3] C:\Users\MaskMT\.gradle\caches\transforms-4\7a0ca73e6dd741f1edaf5ad6a9ee2787\transformed\jetified-react-android-0.74.3-debug\AndroidManifest.xml:19:9-21:40
 MERGED from [com.facebook.react:react-android:0.74.3] C:\Users\MaskMT\.gradle\caches\transforms-4\7a0ca73e6dd741f1edaf5ad6a9ee2787\transformed\jetified-react-android-0.74.3-debug\AndroidManifest.xml:19:9-21:40
 	android:exported
-		ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:30:80-104
+		ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:31:80-104
 	android:name
-		ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:30:15-79
+		ADDED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\main\AndroidManifest.xml:31:15-79
 uses-sdk
 INJECTED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\debug\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\debug\AndroidManifest.xml
 INJECTED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\debug\AndroidManifest.xml
+MERGED from [:react-native-async-storage_async-storage] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\@react-native-async-storage\async-storage\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:react-native-async-storage_async-storage] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\@react-native-async-storage\async-storage\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:react-native-community_geolocation] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\@react-native-community\geolocation\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:react-native-community_geolocation] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\@react-native-community\geolocation\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:expo] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\expo\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:expo] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\expo\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:react-native-safe-area-context] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\react-native-safe-area-context\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:react-native-safe-area-context] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\react-native-safe-area-context\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:react-native-screens] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\react-native-screens\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:react-native-screens] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\react-native-screens\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:react-native-vector-icons] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\react-native-vector-icons\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:react-native-vector-icons] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\react-native-vector-icons\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:react-native-webview] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:react-native-webview] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:expo-asset] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\expo-asset\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:expo-asset] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\expo-asset\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:expo-constants] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\expo-constants\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
@@ -297,6 +322,14 @@ MERGED from [androidx.appcompat:appcompat:1.6.1] C:\Users\MaskMT\.gradle\caches\
 MERGED from [androidx.appcompat:appcompat:1.6.1] C:\Users\MaskMT\.gradle\caches\transforms-4\75082bdd4d8937d749b66860ace123c3\transformed\appcompat-1.6.1\AndroidManifest.xml:20:5-44
 MERGED from [com.facebook.fresco:imagepipeline-okhttp3:3.1.3] C:\Users\MaskMT\.gradle\caches\transforms-4\3798e971e5690e2c5cd28a3bdb382e64\transformed\jetified-imagepipeline-okhttp3-3.1.3\AndroidManifest.xml:5:5-44
 MERGED from [com.facebook.fresco:imagepipeline-okhttp3:3.1.3] C:\Users\MaskMT\.gradle\caches\transforms-4\3798e971e5690e2c5cd28a3bdb382e64\transformed\jetified-imagepipeline-okhttp3-3.1.3\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:21.0.1] C:\Users\MaskMT\.gradle\caches\transforms-4\0921f91188a9d7d46e419592ef8e860e\transformed\jetified-play-services-location-21.0.1\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:21.0.1] C:\Users\MaskMT\.gradle\caches\transforms-4\0921f91188a9d7d46e419592ef8e860e\transformed\jetified-play-services-location-21.0.1\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:18.1.0] C:\Users\MaskMT\.gradle\caches\transforms-4\b553aec776d63ad0400d20f31abd30d5\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-base:18.1.0] C:\Users\MaskMT\.gradle\caches\transforms-4\b553aec776d63ad0400d20f31abd30d5\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-tasks:18.0.2] C:\Users\MaskMT\.gradle\caches\transforms-4\c2e89c88aea2041af98848191aae5c5d\transformed\jetified-play-services-tasks-18.0.2\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks:18.0.2] C:\Users\MaskMT\.gradle\caches\transforms-4\c2e89c88aea2041af98848191aae5c5d\transformed\jetified-play-services-tasks-18.0.2\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement:18.1.0] C:\Users\MaskMT\.gradle\caches\transforms-4\bc6d6f67de31a1f674e3be91de9f4179\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-basement:18.1.0] C:\Users\MaskMT\.gradle\caches\transforms-4\bc6d6f67de31a1f674e3be91de9f4179\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:18:5-43
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\MaskMT\.gradle\caches\transforms-4\2e4cc22200590955c444e5266b98d5ff\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\MaskMT\.gradle\caches\transforms-4\2e4cc22200590955c444e5266b98d5ff\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\MaskMT\.gradle\caches\transforms-4\ebe1448faf80a1498f821d741ab5be1c\transformed\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
@@ -365,6 +398,8 @@ MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] C:\Users\Mask
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] C:\Users\MaskMT\.gradle\caches\transforms-4\f007f00dbd02a21f8b593d76203ac68e\transformed\swiperefreshlayout-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.2.0] C:\Users\MaskMT\.gradle\caches\transforms-4\849c9b0f1d7a1f28599af97f569c9c57\transformed\coordinatorlayout-1.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.2.0] C:\Users\MaskMT\.gradle\caches\transforms-4\849c9b0f1d7a1f28599af97f569c9c57\transformed\coordinatorlayout-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.webkit:webkit:1.4.0] C:\Users\MaskMT\.gradle\caches\transforms-4\7e3b1e1bd7356e25b89fa07b31da23d7\transformed\webkit-1.4.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.webkit:webkit:1.4.0] C:\Users\MaskMT\.gradle\caches\transforms-4\7e3b1e1bd7356e25b89fa07b31da23d7\transformed\webkit-1.4.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] C:\Users\MaskMT\.gradle\caches\transforms-4\34233f0056272bda9ec725db63b25e61\transformed\jetified-emoji2-views-helper-1.2.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] C:\Users\MaskMT\.gradle\caches\transforms-4\34233f0056272bda9ec725db63b25e61\transformed\jetified-emoji2-views-helper-1.2.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\MaskMT\.gradle\caches\transforms-4\fc5e80a564e50f7e087f843e40b1b519\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:21:5-44
@@ -435,6 +470,22 @@ MERGED from [com.facebook.soloader:soloader:0.10.5] C:\Users\MaskMT\.gradle\cach
 		INJECTED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\debug\AndroidManifest.xml
 	android:minSdkVersion
 		INJECTED from D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\android\app\src\debug\AndroidManifest.xml
+provider#com.reactnativecommunity.webview.RNCWebViewFileProvider
+ADDED from [:react-native-webview] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:8:9-16:20
+	android:grantUriPermissions
+		ADDED from [:react-native-webview] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-47
+	android:authorities
+		ADDED from [:react-native-webview] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-64
+	android:exported
+		ADDED from [:react-native-webview] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-37
+	android:name
+		ADDED from [:react-native-webview] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-83
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from [:react-native-webview] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-15:63
+	android:resource
+		ADDED from [:react-native-webview] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:15:17-60
+	android:name
+		ADDED from [:react-native-webview] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:14:17-67
 intent#action:name:android.intent.action.OPEN_DOCUMENT_TREE
 ADDED from [:expo-file-system] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\expo-file-system\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:15:9-17:18
 action#android.intent.action.OPEN_DOCUMENT_TREE
@@ -453,12 +504,6 @@ ADDED from [:expo-file-system] D:\TrainWarningProject\GitDemoTest\TrainWarningAP
 		ADDED from [:expo-file-system] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\expo-file-system\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:26:13-48
 	android:name
 		ADDED from [:expo-file-system] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\expo-file-system\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:22:13-74
-meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from [:expo-file-system] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\expo-file-system\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:27:13-29:70
-	android:resource
-		ADDED from [:expo-file-system] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\expo-file-system\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:29:17-67
-	android:name
-		ADDED from [:expo-file-system] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\expo-file-system\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:28:17-67
 meta-data#org.unimodules.core.AppLoader#react-native-headless
 ADDED from [:expo-modules-core] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\expo-modules-core\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:9-11:89
 	android:value
@@ -476,6 +521,20 @@ MERGED from [com.facebook.soloader:soloader:0.10.5] C:\Users\MaskMT\.gradle\cach
 		REJECTED from [com.facebook.soloader:soloader:0.10.5] C:\Users\MaskMT\.gradle\caches\transforms-4\f4d2c7b9d8f7ce5e4b1bdba4d96581f4\transformed\jetified-soloader-0.10.5\AndroidManifest.xml:14:13-34
 	android:name
 		ADDED from [:expo-modules-core] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\expo-modules-core\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-57
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:18.1.0] C:\Users\MaskMT\.gradle\caches\transforms-4\b553aec776d63ad0400d20f31abd30d5\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:18.1.0] C:\Users\MaskMT\.gradle\caches\transforms-4\b553aec776d63ad0400d20f31abd30d5\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:22:19-43
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:18.1.0] C:\Users\MaskMT\.gradle\caches\transforms-4\b553aec776d63ad0400d20f31abd30d5\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:21:19-78
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:18.1.0] C:\Users\MaskMT\.gradle\caches\transforms-4\b553aec776d63ad0400d20f31abd30d5\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:19-85
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:18.1.0] C:\Users\MaskMT\.gradle\caches\transforms-4\bc6d6f67de31a1f674e3be91de9f4179\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:18.1.0] C:\Users\MaskMT\.gradle\caches\transforms-4\bc6d6f67de31a1f674e3be91de9f4179\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:18.1.0] C:\Users\MaskMT\.gradle\caches\transforms-4\bc6d6f67de31a1f674e3be91de9f4179\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
 provider#androidx.startup.InitializationProvider
 ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\MaskMT\.gradle\caches\transforms-4\fc5e80a564e50f7e087f843e40b1b519\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
 MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\MaskMT\.gradle\caches\transforms-4\c279859521e908ec9f1b95ff0bfba2a6\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:26:9-34:20
@@ -502,7 +561,7 @@ ADDED from [androidx.core:core:1.12.0] C:\Users\MaskMT\.gradle\caches\transforms
 		ADDED from [androidx.core:core:1.12.0] C:\Users\MaskMT\.gradle\caches\transforms-4\c86d9d1f180fe0343a88fda494f828ef\transformed\core-1.12.0\AndroidManifest.xml:24:9-44
 	android:name
 		ADDED from [androidx.core:core:1.12.0] C:\Users\MaskMT\.gradle\caches\transforms-4\c86d9d1f180fe0343a88fda494f828ef\transformed\core-1.12.0\AndroidManifest.xml:23:9-81
-permission#com.anonymous.TrainWarningAPP.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+permission#com.anonymous.TrainWaringAPP.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
 ADDED from [androidx.core:core:1.12.0] C:\Users\MaskMT\.gradle\caches\transforms-4\c86d9d1f180fe0343a88fda494f828ef\transformed\core-1.12.0\AndroidManifest.xml:22:5-24:47
 	android:protectionLevel
 		ADDED from [androidx.core:core:1.12.0] C:\Users\MaskMT\.gradle\caches\transforms-4\c86d9d1f180fe0343a88fda494f828ef\transformed\core-1.12.0\AndroidManifest.xml:24:9-44
@@ -512,7 +571,7 @@ uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
 ADDED from [androidx.core:core:1.12.0] C:\Users\MaskMT\.gradle\caches\transforms-4\c86d9d1f180fe0343a88fda494f828ef\transformed\core-1.12.0\AndroidManifest.xml:26:5-97
 	android:name
 		ADDED from [androidx.core:core:1.12.0] C:\Users\MaskMT\.gradle\caches\transforms-4\c86d9d1f180fe0343a88fda494f828ef\transformed\core-1.12.0\AndroidManifest.xml:26:22-94
-uses-permission#com.anonymous.TrainWarningAPP.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+uses-permission#com.anonymous.TrainWaringAPP.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
 ADDED from [androidx.core:core:1.12.0] C:\Users\MaskMT\.gradle\caches\transforms-4\c86d9d1f180fe0343a88fda494f828ef\transformed\core-1.12.0\AndroidManifest.xml:26:5-97
 	android:name
 		ADDED from [androidx.core:core:1.12.0] C:\Users\MaskMT\.gradle\caches\transforms-4\c86d9d1f180fe0343a88fda494f828ef\transformed\core-1.12.0\AndroidManifest.xml:26:22-94

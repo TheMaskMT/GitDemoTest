@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.anonymous.TrainWarningAPP"
+    package="com.anonymous.TrainWaringAPP"
     android:versionCode="1"
     android:versionName="1.0.0" >
 
@@ -30,13 +30,13 @@
     </queries>
 
     <permission
-        android:name="com.anonymous.TrainWarningAPP.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:name="com.anonymous.TrainWaringAPP.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
         android:protectionLevel="signature" />
 
-    <uses-permission android:name="com.anonymous.TrainWarningAPP.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+    <uses-permission android:name="com.anonymous.TrainWaringAPP.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
 
     <application
-        android:name="com.anonymous.TrainWarningAPP.MainApplication"
+        android:name="com.anonymous.TrainWaringAPP.MainApplication"
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
@@ -57,7 +57,7 @@
             android:value="0" />
 
         <activity
-            android:name="com.anonymous.TrainWarningAPP.MainActivity"
+            android:name="com.anonymous.TrainWaringAPP.MainActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|uiMode"
             android:exported="true"
             android:launchMode="singleTask"
@@ -75,7 +75,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
 
-                <data android:scheme="com.anonymous.TrainWarningAPP" />
+                <data android:scheme="com.anonymous.TrainWaringAPP" />
             </intent-filter>
         </activity>
         <activity
@@ -83,8 +83,17 @@
             android:exported="false" />
 
         <provider
+            android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider"
+            android:authorities="com.anonymous.TrainWaringAPP.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_provider_paths" />
+        </provider>
+        <provider
             android:name="expo.modules.filesystem.FileSystemFileProvider"
-            android:authorities="com.anonymous.TrainWarningAPP.FileSystemFileProvider"
+            android:authorities="com.anonymous.TrainWaringAPP.FileSystemFileProvider"
             android:exported="false"
             android:grantUriPermissions="true" >
             <meta-data
@@ -99,9 +108,18 @@
             android:name="com.facebook.soloader.enabled"
             android:value="true" />
 
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
         <provider
             android:name="androidx.startup.InitializationProvider"
-            android:authorities="com.anonymous.TrainWarningAPP.androidx-startup"
+            android:authorities="com.anonymous.TrainWaringAPP.androidx-startup"
             android:exported="false" >
             <meta-data
                 android:name="androidx.emoji2.text.EmojiCompatInitializer"

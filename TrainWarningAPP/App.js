@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { InfoScreen } from './src/components/info';
-import { HomeScreen, sayGoodbye, HeaderLogo } from './src/components/header';
+import { HomeScreen, HeaderLogo } from './src/components/header';
 
 
 const Stack = createNativeStackNavigator();
