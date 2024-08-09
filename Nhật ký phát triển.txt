@@ -39,7 +39,22 @@ Ngày 05/08/2024
 * Dự kiến các screen 
     - Screen 1: Đăng nhập/Đăng ký
     - Screen 2: Trang chủ
-    - Screen 3: Admin (nhập thông tin)
+    - Screen 3: Admin (Nhập thông tin)
     - Screen 4: User xem bản đồ
     - Screen 5: Xem vị trí bản thân + Cảnh báo (Nếu được: Khuyến khích cảnh báo bằng thông báo)
 
+Ngày 07/08/2024
+    11:22
+    Chức năng bản đồ nếu kéo API thì đang yêu cầu phải có thẻ visa (đang tìm hướng khác)
+
+
+Ngày 09/08/2024
+    10:09
+    * Việc cần làm: Form nhập thông tin
+
+    18:00
+    * Form thông tin vẫn chưa xong (Cái d*)
+    * Map thì có chút vấn đề.
+    * Còn chức năng cảnh báo người dùng.
+
+    

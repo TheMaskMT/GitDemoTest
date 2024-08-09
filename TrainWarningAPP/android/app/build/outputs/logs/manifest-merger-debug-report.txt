@@ -10,6 +10,7 @@ MERGED from [:react-native-community_geolocation] D:\TrainWarningProject\GitDemo
 MERGED from [:expo] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\expo\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:react-native-safe-area-context] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\react-native-safe-area-context\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:react-native-screens] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\react-native-screens\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:react-native-svg] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\react-native-svg\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:react-native-webview] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-19:12
 MERGED from [:expo-asset] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\expo-asset\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:expo-constants] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\expo-constants\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
@@ -296,6 +297,8 @@ MERGED from [:react-native-safe-area-context] D:\TrainWarningProject\GitDemoTest
 MERGED from [:react-native-safe-area-context] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\react-native-safe-area-context\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:react-native-screens] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\react-native-screens\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:react-native-screens] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\react-native-screens\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:react-native-svg] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\react-native-svg\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:react-native-svg] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\react-native-svg\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:react-native-webview] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:react-native-webview] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:expo-asset] D:\TrainWarningProject\GitDemoTest\TrainWarningAPP\node_modules\expo-asset\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
