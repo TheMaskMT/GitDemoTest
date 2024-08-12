@@ -2,6 +2,7 @@ import * as React from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { Pressable, StyleSheet, Text, TextInput, View } from 'react-native';
 import { storeData, getData } from './datastorage';
+import Fetch from '../Fetch';
 
 
 export function InfoScreen({navigation}){
@@ -9,12 +10,12 @@ export function InfoScreen({navigation}){
   // const [number, onChangeNumber] = React.useState('');
   return(
     <View style={styles.container}>
-      <Text style={{padding: 5, fontSize: 22}}>Nơi nhập dữ liệu.</Text>
+      {/* <Text style={{padding: 5, fontSize: 22}}>Nơi nhập dữ liệu.</Text>
       <TextInput 
         style={styles.input}
         onChangeText={onChangeText}
         value={text}
-      />   
+      />
       <Pressable onPress = {() => storeData('2', text)}>
       <Text style={styles.button}>Lưu</Text>
       </Pressable>
@@ -25,6 +26,10 @@ export function InfoScreen({navigation}){
        <StatusBar style="auto" />
        <Pressable onPress = {() => navigation.navigate('InputInfo')}>
           <Text style={styles.button}>InputInfo</Text>  
+        </Pressable> */}
+        <Fetch></Fetch>
+        <Pressable onPress = {() => navigation.navigate('InputInfo')}>
+          <Text style={styles.button}>Info</Text>  
         </Pressable>
     </View>
   );

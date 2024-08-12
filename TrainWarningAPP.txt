@@ -6,7 +6,6 @@ Hình ảnh (?)
 Ttlq (string)
 Thời gian tàu chạy (Array)
 
-
 Thể hiện trên bản đồ (web, mobile)
 
 Mobile thì lấy GPS
@@ -14,3 +13,12 @@ Cảnh báo tàu chạy
 
 Admin thì nhập liệu bằng tay
 User thì xem
+
+~~~~~~~~~~~~~~~~Đặc biệt nhớ:~~~~~~~~~~~~~~~~
+Phải biết phân biệt công việc nào chính công việc nào phụ
+Nên chia hướng xử lý ra làm các bước
+Luôn phải có cơ sở dữ liệu trước
+Về cơ sở dữ liệu phải biết vị trí Lưu
+Ngay cả demo thì cũng phải làm cho nó nhìn được, không có dữ liệu linh tinh
+Laptop thì chỉ lấy wifi để xác định vị trí, có thể không chuẩn
+Hoàn thành rồi hẵng nói

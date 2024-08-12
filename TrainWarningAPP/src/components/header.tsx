@@ -25,8 +25,6 @@ export function HeaderLogo() {
 export function HomeScreen({navigation}){
  
   const [currentLocation, setCurrentLocation] = useState<AddressModel>()
-  const [latitude, setLatitude] = useState('')
-  const [longitude, setLongitude] = useState('')
 
    useEffect(() => {
     GeoLocation.getCurrentPosition(position =>{
@@ -36,6 +34,7 @@ export function HomeScreen({navigation}){
           lat: position.coords.latitude, 
           lng: position.coords.longitude,
         })
+        console.log(position.coords.latitude, position.coords.longitude)
       }
     });
   }, []);
@@ -57,13 +56,7 @@ export function HomeScreen({navigation}){
   
   return(
     <View style={styles.container}>
-        {currentLocation && (
-        <>
-          <TextInput style={{padding: 5, fontSize: 22, borderColor: 'black', borderWidth: 2, flex: 1}} placeholder='Lat' onChangeText={setLatitude} value={latitude}></TextInput>
-          <TextInput style={{padding: 5, fontSize: 22, borderColor: 'black', borderWidth: 2, flex: 1}} placeholder='Long' onChangeText={setLongitude} value={longitude}></TextInput>
-        </>
-        )}
-        {/* Gọi map ra */}
+       {/* Gọi map ra */}
         {currentLocation && (
           GoogleMap(currentLocation.position.lat, currentLocation.position.lng)
         )}

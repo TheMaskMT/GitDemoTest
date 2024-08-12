@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { StatusBar } from 'expo-status-bar';
+//import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -7,6 +7,7 @@ import { InfoScreen } from './src/components/info';
 import { HomeScreen, HeaderLogo } from './src/components/header';
 import { InfoInputScreen } from './src/components/inputinfo';
 import { NativeBaseProvider, Box, Text, extendTheme } from 'native-base';
+
 
 const Stack = createNativeStackNavigator();
 
@@ -49,19 +50,19 @@ export default function App() {
 }
 
 
-// const styles = StyleSheet.create({
-//   container: {
-//     flex: 1,
-//     backgroundColor: '#fff',
-//     alignItems: 'center',
-//     justifyContent: 'center',
-//   },
+const styles = StyleSheet.create({
+  container: {
+    // flex: 1,
+    // backgroundColor: '#fff',
+    // alignItems: 'center',
+    // justifyContent: 'center',
+  },
 
-//   begin: {
-//     fontSize: 36,
-//     fontFamily: 'timenewroman',
-//     fontWeight: 'bold',
-//     alignItems: 'center',
-//     justifyContent: 'center',
-//   }
-// });
+  // begin: {
+  //   fontSize: 36,
+  //   fontFamily: 'timenewroman',
+  //   fontWeight: 'bold',
+  //   alignItems: 'center',
+  //   justifyContent: 'center',
+  // }
+});

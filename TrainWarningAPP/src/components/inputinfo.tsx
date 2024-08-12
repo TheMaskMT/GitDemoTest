@@ -1,49 +1,28 @@
 import * as React from 'react';
+import { useState } from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { Pressable, StyleSheet, Text, TextInput, View, Alert, Button } from 'react-native';
 import { storeData, getData } from './datastorage';
-
+import { TextArea } from 'native-base';
+import  AddData  from '../AddData'
 
 export function InfoInputScreen({navigation}){
-  const [text, onChangeText] = React.useState('Useless Text');
-
-  const createTwoButtonAlert = () =>
-    Alert.alert('Alert Title', 'My Alert Msg', [
-      {
-        text: 'Cancel',
-        onPress: () => console.log('Cancel Pressed'),
-        style: 'cancel',
-      },
-      {text: 'OK', onPress: () => console.log('OK Pressed')},
-    ]);
-
-  const createThreeButtonAlert = () =>
-    Alert.alert('Alert Title', 'My Alert Msg', [
-      {
-        text: 'Ask me later',
-        onPress: () => console.log('Ask me later pressed'),
-      },
-      {
-        text: 'Cancel',
-        onPress: () => console.log('Cancel Pressed'),
-        style: 'cancel',
-      },
-      {text: 'OK', onPress: () => console.log('OK Pressed')},
-    ]);
-
+  // const [text, onChangeText] = useState('Useless Text');
+  // const [latitude, setLatitude] = useState('')
+  // const [longitude, setLongitude] = useState('')
   
   // const [number, onChangeNumber] = React.useState('');
   return(
     <View style={styles.container}>
-      <Text style={{padding: 5, fontSize: 22}}>Nơi nhập dữ liệu.</Text>
+      {/* <Text style={{padding: 5, fontSize: 22}}>Nhập tên đường</Text>
       <TextInput 
         style={styles.input}
         onChangeText={onChangeText}
         value={text}
       />
-
-    <Button title={'2-Button Alert'} onPress={createTwoButtonAlert} />
-    <Button title={'3-Button Alert'} onPress={createThreeButtonAlert} />
+      <TextInput style={{padding: 5, fontSize: 22, borderColor: 'black', borderWidth: 2, flex: 1}} placeholder='Lat' onChangeText={setLatitude} value={latitude}></TextInput>
+      <TextInput style={{padding: 5, fontSize: 22, borderColor: 'black', borderWidth: 2, flex: 1}} placeholder='Long' onChangeText={setLongitude} value={longitude}></TextInput>
+      
       <Pressable onPress = {() => storeData('2', text)}>
       <Text style={styles.button}>Lưu</Text>
       </Pressable>
@@ -51,7 +30,8 @@ export function InfoInputScreen({navigation}){
       <Text style={styles.button}>Đọc</Text>
       </Pressable>
       <Text> Giá trị bạn vừa nhập là: {text}</Text>
-       <StatusBar style="auto" />
+       <StatusBar style="auto" /> */}
+       <AddData></AddData>
     </View>
   );
 }
