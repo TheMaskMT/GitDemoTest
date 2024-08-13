@@ -63,3 +63,8 @@ Ngày 12/08/2024
     
     17:22
     *Đã đẩy được dữ liệu lên database realtime tuy nhiên vẫn chưa setID động
+
+Ngày 13/08/2024
+    15:21
+    *Đã kết nối lên xuống Firebase cho Name, Details, Image.
+    *Option: Set size động cho các đối tượng

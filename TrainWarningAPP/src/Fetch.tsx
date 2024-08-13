@@ -1,6 +1,9 @@
-import { View, Text, FlatList, StyleSheet, Pressable } from 'react-native'
-import React, { useState, useEffect } from 'react'
+import { View, Text, FlatList, StyleSheet, Pressable, Image, Dimensions } from 'react-native'
+import React, { useState, useEffect, useLayoutEffect } from 'react'
 import { firebase } from '../config'
+
+const win = Dimensions.get('window')
+const ratio = win.width/1918
 
 const Fetch = () => {
     const [users, setUsers] = useState([])
@@ -13,22 +16,25 @@ const Fetch = () => {
             querySnapshot => {
                 const users = []
                 querySnapshot.forEach((doc) => {
-                    const { name, details, test} = doc.data()
+                    const { name, details, test, img, runtime } = doc.data()
                     users.push({
                         id: doc.id,
                         name,
                         details,
                         test,
+                        img,
+                        runtime
                     })       
                 })
                 setUsers(users)
+
             }
         )
     })
     
 
     return (
-        <View style={{ flex: 1, marginTop: 100}}>
+        <View style={{ flex: 1, marginTop: 50}}>
             <FlatList
                 style={{height:'100%'}}
                 data={users}
@@ -40,7 +46,14 @@ const Fetch = () => {
                         <View style={styles.innerContainer}>
                           <Text style={styles.itemName}>{item.name}</Text>
                           <Text style={styles.itemDetails}>{item.details}</Text>
-                          <Text style={styles.itemRunTime}>{item.test}</Text>
+                          {/* <Text style={styles.itemRunTime}>{item.runtime}</Text> */}
+                          <Image 
+                            style={styles.image}
+                            source={{
+                                uri: item.img
+                            }}
+                          />
+
                           {/* <Text style={styles.itemPosition}>{item.position}</Text> */}
                         </View>
                     </Pressable>
@@ -59,10 +72,14 @@ const styles = StyleSheet.create({
         borderRadius: 15,
         margin: 5,
         marginHorizontal: 10,
+        flex: 1
     },
     innerContainer:{
         alignItems: 'center',
         flexDirection: 'column',
+        alignSelf: 'flex-start',
+        justifyContent: 'center',
+        flex: 1,
     },
     itemName: {
         fontWeight: 'bold',
@@ -75,5 +92,15 @@ const styles = StyleSheet.create({
     },
     itemRunTime: {
         fontWeight: '500',
+    },
+    image: {
+        width: win.width,
+        height: 870 * ratio,
+        resizeMode: 'stretch',
+        borderRadius: 50,
+        alignSelf: 'flex-start',
+        flex: 1,
+        maxWidth: 1600,
+        maxHeight: 900,
     },
 })

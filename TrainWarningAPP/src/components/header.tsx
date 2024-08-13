@@ -2,11 +2,8 @@ import * as React from 'react';
 import { useEffect, useState } from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image, Pressable, TextInput } from 'react-native';
-import GeoLocation from '@react-native-community/geolocation'
-//import ReactIframe from 'react-iframe'
+import { RefMap } from './map';
 import { GoogleMap } from './googlemap';
-import { AddressModel } from '../models/AddressModel';
-import axios from 'axios';
 
 export function HeaderLogo() {
   return (
@@ -23,43 +20,9 @@ export function HeaderLogo() {
 }
 
 export function HomeScreen({navigation}){
- 
-  const [currentLocation, setCurrentLocation] = useState<AddressModel>()
-
-   useEffect(() => {
-    GeoLocation.getCurrentPosition(position =>{
-      if(position.coords)
-      {
-        reverseGeoCode({
-          lat: position.coords.latitude, 
-          lng: position.coords.longitude,
-        })
-        console.log(position.coords.latitude, position.coords.longitude)
-      }
-    });
-  }, []);
-
-  const reverseGeoCode = async ({lat, lng}: {lat: number; lng: number}) =>{
-    const api = 'https://revgeocode.search.hereapi.com/v1/revgeocode?at='+lat+','+lng+'&lang=en-US&apiKey=f-dbVATubYC578CzxN6hMXJWu5wkgtLyf42CUBaQOSc'
-    
-    try {
-      const res = await axios(api)
-
-      if(res && res.status === 200 && res.data) {
-        const items = res.data.items
-        setCurrentLocation(items[0])
-      }
-    } catch(error){
-      console.log(error)
-    }
-  }
-  
-  return(
+   return(
     <View style={styles.container}>
-       {/* Gọi map ra */}
-        {currentLocation && (
-          GoogleMap(currentLocation.position.lat, currentLocation.position.lng)
-        )}
+        <RefMap/>
         <Pressable onPress = {() => navigation.navigate('Info')}>
           <Text style={styles.button}>Info</Text>  
         </Pressable>
