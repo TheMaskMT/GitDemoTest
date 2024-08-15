@@ -68,3 +68,16 @@ Ngày 13/08/2024
     15:21
     *Đã kết nối lên xuống Firebase cho Name, Details, Image.
     *Option: Set size động cho các đối tượng
+
+Ngày 14/08/2024
+    *Đã có thể mở kho lưu ảnh nhưng chưa upload lên được bằng web
+
+Ngày 15/08/2024
+    * Đã mở kho lưu trữ ảnh, upload hình ảnh lên bằng web
+
+    17:30
+    * Form nhập đã tương đối đầy đủ.
+    * Cần: 
+    - Chỉnh UI
+    - LÀM THỜI GIAN TÀU CHẠY CÁI DMCMM.
+    - Làm footer

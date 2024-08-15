@@ -62,9 +62,17 @@
     <string name="common_open_on_phone">Öppna på mobilen</string>
     <string name="common_signin_button_text">Logga in</string>
     <string name="common_signin_button_text_long">Logga in med Google</string>
+    <string name="crop_image_activity_no_permissions">Avbryter, nödvändiga behörigheter beviljas inte</string>
+    <string name="crop_image_activity_title"/>
+    <string name="crop_image_menu_crop">Beskär</string>
     <string name="error_icon_content_description">Fel</string>
     <string name="exposed_dropdown_menu_content_description">Visa rullgardinsmenyn</string>
     <string gender="unknown" name="header_description">Rubrik</string>
+    <string name="ic_flip_24">Vänd</string>
+    <string name="ic_flip_24_horizontally">Vänd horisontellt</string>
+    <string name="ic_flip_24_vertically">Vänd vertikalt</string>
+    <string name="ic_rotate_left_24">Rotera vänster</string>
+    <string name="ic_rotate_right_24">Rotera höger</string>
     <string name="icon_content_description">Dialogikon</string>
     <string gender="unknown" name="image_description">Bild</string>
     <string gender="unknown" name="imagebutton_description">Knapp, bild</string>
@@ -119,6 +127,7 @@
     <string name="mtrl_picker_toggle_to_text_input_mode">Byt till text som inmatningsläge</string>
     <string name="mtrl_picker_toggle_to_year_selection">Byt till att välja ett år genom att trycka</string>
     <string name="password_toggle_content_description">Visa lösenord</string>
+    <string name="pick_image_chooser_title">Välj bild</string>
     <string gender="unknown" name="progressbar_description">Förloppsfält</string>
     <string gender="unknown" name="radiogroup_description">Radiogrupp</string>
     <string gender="unknown" name="rn_tab_description">Flik</string>

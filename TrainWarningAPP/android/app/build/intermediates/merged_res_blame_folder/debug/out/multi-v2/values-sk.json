@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.anonymous.TrainWaringAPP.app-mergeDebugResources-35:/values-sk/values-sk.xml",
+            "outputFile": "com.anonymous.TrainWaringAPP.app-mergeDebugResources-44:/values-sk/values-sk.xml",
             "map": [
                 {
                     "source": "C:\\Users\\MaskMT\\.gradle\\caches\\transforms-4\\bc6d6f67de31a1f674e3be91de9f4179\\transformed\\jetified-play-services-basement-18.1.0\\res\\values-sk\\values.xml",

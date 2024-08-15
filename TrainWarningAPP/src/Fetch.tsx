@@ -27,16 +27,15 @@ const Fetch = () => {
                     })       
                 })
                 setUsers(users)
-
             }
         )
     })
     
 
     return (
-        <View style={{ flex: 1, marginTop: 50}}>
+        <View style={{ flex: 1, marginTop: 50, backgroundColor: 'none', width: '100%'}}>
             <FlatList
-                style={{height:'100%'}}
+                style={{width: '100%'}}
                 data={users}
                 numColumns={1}
                 renderItem={({item}) => (
@@ -47,7 +46,7 @@ const Fetch = () => {
                           <Text style={styles.itemName}>{item.name}</Text>
                           <Text style={styles.itemDetails}>{item.details}</Text>
                           {/* <Text style={styles.itemRunTime}>{item.runtime}</Text> */}
-                          <Image 
+                          <Image
                             style={styles.image}
                             source={{
                                 uri: item.img
@@ -71,15 +70,17 @@ const styles = StyleSheet.create({
         padding: 15,
         borderRadius: 15,
         margin: 5,
-        marginHorizontal: 10,
+        marginHorizontal: '5%',
+        alignContent: 'center',
+        justifyContent: 'center',
         flex: 1
     },
     innerContainer:{
         alignItems: 'center',
         flexDirection: 'column',
-        alignSelf: 'flex-start',
+        alignSelf: 'center',
         justifyContent: 'center',
-        flex: 1,
+        // flex: 1,
     },
     itemName: {
         fontWeight: 'bold',
@@ -94,13 +95,13 @@ const styles = StyleSheet.create({
         fontWeight: '500',
     },
     image: {
-        width: win.width,
+        width: win.width/100*85,
         height: 870 * ratio,
         resizeMode: 'stretch',
-        borderRadius: 50,
-        alignSelf: 'flex-start',
+        borderRadius: 15,
+        alignSelf: 'stretch',
         flex: 1,
-        maxWidth: 1600,
-        maxHeight: 900,
+        // maxWidth: 900,
+        // maxHeight: 720,
     },
 })

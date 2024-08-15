@@ -62,9 +62,17 @@
     <string name="common_open_on_phone">Apri sul telefono</string>
     <string name="common_signin_button_text">Accedi</string>
     <string name="common_signin_button_text_long">Accedi con Google</string>
+    <string name="crop_image_activity_no_permissions">Annullamento in corso, autorizzazione richieste non concesse</string>
+    <string name="crop_image_activity_title"/>
+    <string name="crop_image_menu_crop">Ritaglia</string>
     <string name="error_icon_content_description">Errore</string>
     <string name="exposed_dropdown_menu_content_description">Mostra il menu a discesa</string>
     <string gender="unknown" name="header_description">Titolo</string>
+    <string name="ic_flip_24">Capovolgi</string>
+    <string name="ic_flip_24_horizontally">Capovolgi orizzontalmente</string>
+    <string name="ic_flip_24_vertically">Capovolgi verticalmente</string>
+    <string name="ic_rotate_left_24">Ruota in senso antiorario</string>
+    <string name="ic_rotate_right_24">Ruota</string>
     <string name="icon_content_description">Icona della finestra di dialogo</string>
     <string gender="unknown" name="image_description">Immagine</string>
     <string gender="unknown" name="imagebutton_description">Pulsante, Immagine</string>
@@ -117,6 +125,9 @@
     <string name="mtrl_picker_toggle_to_text_input_mode">Passa alla modalità di immissione Testo</string>
     <string name="mtrl_picker_toggle_to_year_selection">Tocca per passare alla selezione di un anno</string>
     <string name="password_toggle_content_description">Mostra password</string>
+    <string name="pick_image_camera">Fotocamera</string>
+    <string name="pick_image_chooser_title">Seleziona origine</string>
+    <string name="pick_image_gallery">Galleria</string>
     <string gender="unknown" name="progressbar_description">Barra di avanzamento</string>
     <string gender="unknown" name="radiogroup_description">Gruppo radio</string>
     <string gender="unknown" name="scrollbar_description">Barra di scorrimento</string>

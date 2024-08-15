@@ -62,9 +62,17 @@
     <string name="common_open_on_phone">Buka pada telefon</string>
     <string name="common_signin_button_text">Log masuk</string>
     <string name="common_signin_button_text_long">Log masuk dengan Google</string>
+    <string name="crop_image_activity_no_permissions">Membatal, tidak mendapat kebenaran yang diperlukan</string>
+    <string name="crop_image_activity_title"/>
+    <string name="crop_image_menu_crop">Potong</string>
     <string name="error_icon_content_description">Ralat</string>
     <string name="exposed_dropdown_menu_content_description">Tunjukkan menu lungsur</string>
     <string gender="unknown" name="header_description">Tajuk</string>
+    <string name="ic_flip_24">Flip</string>
+    <string name="ic_flip_24_horizontally">Flip melintang</string>
+    <string name="ic_flip_24_vertically">Flip menegak</string>
+    <string name="ic_rotate_left_24">Putar arah berlawanan jam</string>
+    <string name="ic_rotate_right_24">Putar</string>
     <string name="icon_content_description">Ikon Dialog</string>
     <string gender="unknown" name="image_description">Imej</string>
     <string gender="unknown" name="imagebutton_description">Butang, Imej</string>
@@ -118,6 +126,7 @@
     <string name="mtrl_picker_toggle_to_text_input_mode">Beralih kepada mod input teks</string>
     <string name="mtrl_picker_toggle_to_year_selection">Ketik untuk beralih kepada pemilihan tahun</string>
     <string name="password_toggle_content_description">Tunjukkan kata laluan</string>
+    <string name="pick_image_chooser_title">Pilih sumber</string>
     <string gender="unknown" name="progressbar_description">Bar Kemajuan</string>
     <string gender="unknown" name="radiogroup_description">Kumpulan Radio</string>
     <string gender="unknown" name="scrollbar_description">Bar Tatal</string>

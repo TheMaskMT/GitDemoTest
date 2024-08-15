@@ -1,8 +1,9 @@
 import * as React from 'react';
 import { useState } from 'react';
-import { Pressable, StyleSheet, View, } from 'react-native';
+import { Pressable, ScrollView, StyleSheet, View, } from 'react-native';
 import  AddData  from '../AddData'
-import UploadMediaFile from '../UploadMediaFile';
+import { SafeAreaView } from 'react-native-safe-area-context';
+import { UploadMediaFile } from '../UploadMediaFile';
 
 export function InfoInputScreen({navigation}){
   // const [text, onChangeText] = useState('Useless Text');
@@ -11,10 +12,10 @@ export function InfoInputScreen({navigation}){
   
   // const [number, onChangeNumber] = React.useState('');
   return(
-    <View style={styles.container}>
-       {/* <AddData></AddData> */}
-      <UploadMediaFile></UploadMediaFile>
-    </View>
+    <SafeAreaView style={styles.container}>
+        <AddData></AddData>
+        {/* <UploadMediaFile></UploadMediaFile> */}
+    </SafeAreaView>
   );
 }
 
@@ -34,9 +35,9 @@ const styles = StyleSheet.create({
   button: {
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: 'darkblue',
+    backgroundColor: '#3465B5',
     padding: 10,
     color: 'white',
     // borderRadius: '10px'
-  }
+  },
 });

@@ -62,9 +62,17 @@
     <string name="common_open_on_phone">Ouvrir sur le téléphone</string>
     <string name="common_signin_button_text">Se connecter</string>
     <string name="common_signin_button_text_long">Se connecter avec Google</string>
+    <string name="crop_image_activity_no_permissions">Annulation, il manque des permissions requises</string>
+    <string name="crop_image_activity_title"/>
+    <string name="crop_image_menu_crop">Redimensionner</string>
     <string name="error_icon_content_description">Erreur</string>
     <string name="exposed_dropdown_menu_content_description">Afficher le menu déroulant</string>
     <string gender="unknown" name="header_description">Titre</string>
+    <string name="ic_flip_24">Retourner</string>
+    <string name="ic_flip_24_horizontally">Retourner horizontalement</string>
+    <string name="ic_flip_24_vertically">Retourner verticalement</string>
+    <string name="ic_rotate_left_24">Pivoter à gauche</string>
+    <string name="ic_rotate_right_24">Pivoter à droite</string>
     <string name="icon_content_description">Icône de la boîte de dialogue</string>
     <string gender="unknown" name="imagebutton_description">Bouton, image</string>
     <string name="item_view_role_description">Tabulation</string>
@@ -117,6 +125,9 @@
     <string name="mtrl_picker_toggle_to_text_input_mode">Passer au mode de saisie Texte</string>
     <string name="mtrl_picker_toggle_to_year_selection">Appuyer pour sélectionner une année</string>
     <string name="password_toggle_content_description">Afficher le mot de passe</string>
+    <string name="pick_image_camera">Appareil photo</string>
+    <string name="pick_image_chooser_title">Sélectionner la source</string>
+    <string name="pick_image_gallery">Galerie</string>
     <string gender="unknown" name="progressbar_description">Barre de progression</string>
     <string gender="unknown" name="radiogroup_description">Groupe de boutons radio</string>
     <string gender="unknown" name="rn_tab_description">Onglet</string>

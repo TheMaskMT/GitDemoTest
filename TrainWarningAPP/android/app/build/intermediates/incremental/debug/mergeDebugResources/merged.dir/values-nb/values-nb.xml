@@ -60,8 +60,16 @@
     <string name="common_open_on_phone">Åpne på telefonen</string>
     <string name="common_signin_button_text">Logg på</string>
     <string name="common_signin_button_text_long">Logg på med Google</string>
+    <string name="crop_image_activity_no_permissions">Avbryter, nødvendige tillatelser er ikke gitt</string>
+    <string name="crop_image_activity_title"/>
+    <string name="crop_image_menu_crop">Beskjær</string>
     <string name="error_icon_content_description">Feil</string>
     <string name="exposed_dropdown_menu_content_description">Vis rullegardinmenyen</string>
+    <string name="ic_flip_24">Vend</string>
+    <string name="ic_flip_24_horizontally">Vend vannrett</string>
+    <string name="ic_flip_24_vertically">Vend loddrett</string>
+    <string name="ic_rotate_left_24">Roter teller med urviseren</string>
+    <string name="ic_rotate_right_24">Roter</string>
     <string name="icon_content_description">Dialogboksikon</string>
     <string name="item_view_role_description">Fane</string>
     <string name="material_clock_toggle_content_description">Velg AM eller PM</string>
@@ -110,6 +118,7 @@
     <string name="mtrl_picker_toggle_to_text_input_mode">Bytt til tekstinndatamodus</string>
     <string name="mtrl_picker_toggle_to_year_selection">Trykk for å bytte til å velge år</string>
     <string name="password_toggle_content_description">Vis passordet</string>
+    <string name="pick_image_chooser_title">Velg kilde</string>
     <string msgid="6264217191555673260" name="search_menu_title">"Søk"</string>
     <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
 </resources>

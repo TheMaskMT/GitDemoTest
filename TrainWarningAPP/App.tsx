@@ -1,39 +1,24 @@
 import * as React from 'react';
-//import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, View } from 'react-native';
+import { ScrollView, StyleSheet, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { InfoScreen } from './src/components/info';
 import { HomeScreen, HeaderLogo } from './src/components/header';
 import { InfoInputScreen } from './src/components/inputinfo';
-import { NativeBaseProvider, Box, Text, extendTheme } from 'native-base';
-
+import { NativeBaseProvider } from 'native-base';
+import { FooterMenu } from './src/components/footer';
 
 const Stack = createNativeStackNavigator();
 
-const newColorTheme = {
-  brand: {
-    900: "#8287af",
-    800: "#7c83db",
-    700: "#b3bef6",
-  },
-};
-const theme = extendTheme({colors: newColorTheme})
-
 export default function App() {  
   return ( 
-    // <NativeBaseProvider theme={theme}>
-    //   <Box flex={1} bg="#b3bef6" alignItems="center" justifyContent="center">
-    //     <Text>HelloWorld!</Text>
-    //   </Box>
-    // </NativeBaseProvider>
       <NavigationContainer>
         <NativeBaseProvider>
           <Stack.Navigator 
           initialRouteName="HomeTest"
           screenOptions={{
               headerStyle: {
-                backgroundColor: 'orange',
+                backgroundColor: '#77A3E6',
               },
               headerTintColor: 'white',
               headerTitleStyle: {
@@ -43,7 +28,11 @@ export default function App() {
             <Stack.Screen name = "Home" component={HomeScreen} options={{headerTitle:()=><HeaderLogo></HeaderLogo>}}></Stack.Screen>
             <Stack.Screen name = "Info" component={InfoScreen}></Stack.Screen>
             <Stack.Screen name = "InputInfo" component={InfoInputScreen}></Stack.Screen>
+            
           </Stack.Navigator>
+          <View>
+            <FooterMenu></FooterMenu>
+          </View>
         </NativeBaseProvider>      
       </NavigationContainer>
     );

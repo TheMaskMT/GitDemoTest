@@ -62,9 +62,17 @@
     <string name="common_open_on_phone">Ava telefonis</string>
     <string name="common_signin_button_text">Logi sisse</string>
     <string name="common_signin_button_text_long">Logi sisse Google\'i kontoga</string>
+    <string name="crop_image_activity_no_permissions">Tühistamine, nõutavaid õiguseid ei antud</string>
+    <string name="crop_image_activity_title"/>
+    <string name="crop_image_menu_crop">Lõika</string>
     <string name="error_icon_content_description">Viga</string>
     <string name="exposed_dropdown_menu_content_description">Kuva rippmenüü</string>
     <string gender="unknown" name="header_description">Pealkiri</string>
+    <string name="ic_flip_24">Pööra ümber</string>
+    <string name="ic_flip_24_horizontally">Peegelda horisontaalselt</string>
+    <string name="ic_flip_24_vertically">Peegelda vertikaalselt</string>
+    <string name="ic_rotate_left_24">Pööra vastupäeva</string>
+    <string name="ic_rotate_right_24">Pööra</string>
     <string name="icon_content_description">Dialoogi ikoon</string>
     <string gender="unknown" name="image_description">Pilt</string>
     <string gender="unknown" name="imagebutton_description">Nupp, pilt</string>
@@ -118,6 +126,7 @@
     <string name="mtrl_picker_toggle_to_text_input_mode">Lülitu tekstisisestusrežiimile</string>
     <string name="mtrl_picker_toggle_to_year_selection">Puudutage, et lülituda aasta valimisele</string>
     <string name="password_toggle_content_description">Parooli kuvamine</string>
+    <string name="pick_image_chooser_title">Valige allikas</string>
     <string gender="unknown" name="progressbar_description">Edenemisriba</string>
     <string gender="unknown" name="radiogroup_description">Raadionuppude grupp</string>
     <string gender="unknown" name="rn_tab_description">Vahekaart</string>

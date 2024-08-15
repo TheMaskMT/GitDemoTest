@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.anonymous.TrainWaringAPP.app-mergeDebugResources-35:/values-ru/values-ru.xml",
+            "outputFile": "com.anonymous.TrainWaringAPP.app-mergeDebugResources-44:/values-ru/values-ru.xml",
             "map": [
                 {
                     "source": "C:\\Users\\MaskMT\\.gradle\\caches\\transforms-4\\7a0ca73e6dd741f1edaf5ad6a9ee2787\\transformed\\jetified-react-android-0.74.3-debug\\res\\values-ru\\values-ru.xml",

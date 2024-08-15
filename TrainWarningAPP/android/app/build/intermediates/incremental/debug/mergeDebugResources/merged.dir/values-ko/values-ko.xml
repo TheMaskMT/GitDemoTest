@@ -62,9 +62,17 @@
     <string name="common_open_on_phone">스마트폰에서 열기</string>
     <string name="common_signin_button_text">로그인</string>
     <string name="common_signin_button_text_long">Google 계정으로 로그인</string>
+    <string name="crop_image_activity_no_permissions">필수 권한이 없어서 취소합니다.</string>
+    <string name="crop_image_activity_title"/>
+    <string name="crop_image_menu_crop">자르기</string>
     <string name="error_icon_content_description">오류</string>
     <string name="exposed_dropdown_menu_content_description">드롭다운 메뉴 표시</string>
     <string gender="unknown" name="header_description">제목</string>
+    <string name="ic_flip_24">반전</string>
+    <string name="ic_flip_24_horizontally">좌우반전</string>
+    <string name="ic_flip_24_vertically">상하반전</string>
+    <string name="ic_rotate_left_24">반시계 회전</string>
+    <string name="ic_rotate_right_24">회전</string>
     <string name="icon_content_description">대화상자 아이콘</string>
     <string gender="unknown" name="image_description">이미지</string>
     <string gender="unknown" name="imagebutton_description">버튼, 이미지</string>
@@ -119,6 +127,7 @@
     <string name="mtrl_picker_toggle_to_text_input_mode">텍스트 입력 모드로 전환</string>
     <string name="mtrl_picker_toggle_to_year_selection">탭하여 연도 선택으로 전환</string>
     <string name="password_toggle_content_description">비밀번호 표시</string>
+    <string name="pick_image_chooser_title">이미지 선택</string>
     <string gender="unknown" name="progressbar_description">진행률 표시줄</string>
     <string gender="unknown" name="radiogroup_description">라디오 그룹</string>
     <string gender="unknown" name="rn_tab_description">탭</string>

@@ -1,0 +1,2 @@
+Chức năng gửi ảnh lên Firebase
+Gửi doc lên Firebase

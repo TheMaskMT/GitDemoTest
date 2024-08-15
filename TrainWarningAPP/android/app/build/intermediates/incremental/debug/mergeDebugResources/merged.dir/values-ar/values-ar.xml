@@ -66,9 +66,17 @@
     <string name="common_open_on_phone">فتح على الهاتف</string>
     <string name="common_signin_button_text">تسجل الدخول</string>
     <string name="common_signin_button_text_long">‏تسجيل الدخول عبر Google</string>
+    <string name="crop_image_activity_no_permissions">إلغاء؛ الأذونات المطلوبة غير ممنوحة</string>
+    <string name="crop_image_activity_title"/>
+    <string name="crop_image_menu_crop">قُصّ</string>
     <string name="error_icon_content_description">خطأ</string>
     <string name="exposed_dropdown_menu_content_description">عرض القائمة المنسدلة</string>
     <string gender="unknown" name="header_description">العنوان</string>
+    <string name="ic_flip_24">اقلب</string>
+    <string name="ic_flip_24_horizontally">اقلب أفقيًا</string>
+    <string name="ic_flip_24_vertically">اقلب رأسيًا</string>
+    <string name="ic_rotate_left_24">أدر عكس اتجاه عقارب الساعة</string>
+    <string name="ic_rotate_right_24">أدر</string>
     <string name="icon_content_description">رمز مربع الحوار</string>
     <string gender="unknown" name="image_description">صورة</string>
     <string gender="unknown" name="imagebutton_description">زر، صورة</string>
@@ -123,6 +131,9 @@
     <string name="mtrl_picker_toggle_to_text_input_mode">التبديل إلى وضع \"إدخال النص\"</string>
     <string name="mtrl_picker_toggle_to_year_selection">انقر للتبديل إلى اختيار عام</string>
     <string name="password_toggle_content_description">عرض كلمة المرور</string>
+    <string name="pick_image_camera">الة تصوير</string>
+    <string name="pick_image_chooser_title">اختر مصدرًا</string>
+    <string name="pick_image_gallery">صالة عرض</string>
     <string gender="unknown" name="progressbar_description">شريط التقدم</string>
     <string gender="unknown" name="radiogroup_description">مجموعة أزرار اختيار</string>
     <string gender="unknown" name="rn_tab_description">علامة التبويب</string>

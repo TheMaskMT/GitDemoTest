@@ -14,7 +14,7 @@ Cảnh báo tàu chạy
 Admin thì nhập liệu bằng tay
 User thì xem
 
-~~~~~~~~~~~~~~~~Đặc biệt nhớ:~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~ Đặc biệt nhớ: ~~~~~~~~~~~~~~~~
 Phải biết phân biệt công việc nào chính công việc nào phụ
 Nên chia hướng xử lý ra làm các bước
 Luôn phải có cơ sở dữ liệu trước

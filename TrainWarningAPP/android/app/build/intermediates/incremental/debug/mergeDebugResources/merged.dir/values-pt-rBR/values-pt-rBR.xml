@@ -60,8 +60,16 @@
     <string name="common_open_on_phone">Abrir no smartphone</string>
     <string name="common_signin_button_text">Fazer login</string>
     <string name="common_signin_button_text_long">Fazer login com o Google</string>
+    <string name="crop_image_activity_no_permissions">Cancelando, as permissões necessárias não foram concedidas</string>
+    <string name="crop_image_activity_title"/>
+    <string name="crop_image_menu_crop">Cortar</string>
     <string name="error_icon_content_description">Erro</string>
     <string name="exposed_dropdown_menu_content_description">Mostrar menu suspenso</string>
+    <string name="ic_flip_24">Espelhar</string>
+    <string name="ic_flip_24_horizontally">Espelhar na horizontal</string>
+    <string name="ic_flip_24_vertically">Espelhar na vertifcal</string>
+    <string name="ic_rotate_left_24">Girar para a esquerda</string>
+    <string name="ic_rotate_right_24">Girar para a direita</string>
     <string name="icon_content_description">Ícone de caixa de diálogo</string>
     <string name="item_view_role_description">Guia</string>
     <string name="material_clock_toggle_content_description">Selecionar AM ou PM</string>
@@ -110,6 +118,9 @@
     <string name="mtrl_picker_toggle_to_text_input_mode">Alternar para o modo de entrada de texto</string>
     <string name="mtrl_picker_toggle_to_year_selection">Toque para alternar para a seleção de um ano</string>
     <string name="password_toggle_content_description">Exibir senha</string>
+    <string name="pick_image_camera">Câmera</string>
+    <string name="pick_image_chooser_title">Escolher foto a partir de</string>
+    <string name="pick_image_gallery">Galeria</string>
     <string msgid="6264217191555673260" name="search_menu_title">"Pesquisar"</string>
     <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
 </resources>

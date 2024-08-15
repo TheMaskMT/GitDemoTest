@@ -6,30 +6,11 @@ import Fetch from '../Fetch';
 
 
 export function InfoScreen({navigation}){
-  const [text, onChangeText] = React.useState('Useless Text');
-  // const [number, onChangeNumber] = React.useState('');
   return(
     <View style={styles.container}>
-      {/* <Text style={{padding: 5, fontSize: 22}}>Nơi nhập dữ liệu.</Text>
-      <TextInput 
-        style={styles.input}
-        onChangeText={onChangeText}
-        value={text}
-      />
-      <Pressable onPress = {() => storeData('2', text)}>
-      <Text style={styles.button}>Lưu</Text>
-      </Pressable>
-      <Pressable onPress = {() => getData('2')}>
-      <Text style={styles.button}>Đọc</Text>
-      </Pressable>
-      <Text> Giá trị bạn vừa nhập là: {text}</Text>
-       <StatusBar style="auto" />
-       <Pressable onPress = {() => navigation.navigate('InputInfo')}>
-          <Text style={styles.button}>InputInfo</Text>  
-        </Pressable> */}
         <Fetch></Fetch>
         <Pressable onPress = {() => navigation.navigate('InputInfo')}>
-          <Text style={styles.button}>Info</Text>  
+          <Text style={styles.button}>Info</Text>
         </Pressable>
     </View>
   );
@@ -55,9 +36,9 @@ const styles = StyleSheet.create({
   button: {
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: 'darkblue',
+    backgroundColor: '#3465B5',
     padding: 10,
     color: 'white',
-    // borderRadius: '10px'
+    borderRadius: 10,
   }
 });
