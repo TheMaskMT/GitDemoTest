@@ -81,3 +81,11 @@ Ngày 15/08/2024
     - Chỉnh UI
     - LÀM THỜI GIAN TÀU CHẠY CÁI DMCMM.
     - Làm footer
+
+Ngày 20/08/2024
+    10:50
+    - footer đã có
+    - giờ còn thiếu là lưu link ảnh vào form 
+
+    11:47
+    - Các chức năng đang không chờ nhau
