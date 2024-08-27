@@ -3,8 +3,8 @@ import * as React from 'react';
 import { ImageBackground, StyleSheet, Text, View, Image, Pressable, ScrollView } from 'react-native';
 // import { RefMap } from './map';
 
-const image = {uri: '../../assets/ve-tau-doi-tra.jpg'}
-
+// const image = {uri: '../../assets/ve-tau-doi-tra.jpg'}
+const image = {uri: 'https://firebasestorage.googleapis.com/v0/b/trainwarningapp-f4ac2.appspot.com/o/ve-tau-doi-tra.jpg?alt=media&token=ffee8f8e-e454-4975-bdf3-c06fdae47014'}
 
 export function HeaderLogo(text: string) {
   return (
@@ -30,15 +30,15 @@ export function HomeScreen({navigation}){
     <View style={styles.container}>
       <ImageBackground source={image} resizeMode='cover' style={styles.image}> 
         {/* <RefMap/> */}
-          <ScrollView>
+          {/* <ScrollView>
             <Pressable onPress = {() => navigation.navigate('Info')}>
               <Text style={styles.button}>Info</Text>
             </Pressable>
             <Pressable onPress = {() => navigation.navigate('InputInfo')}>
               <Text style={styles.button}>InputInfo</Text>
-            </Pressable>
+            </Pressable> */}
             {/* <StatusBar style="auto" /> */}
-          </ScrollView>
+          {/* </ScrollView> */}
           </ImageBackground>
       </View>
   );
@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
   container: {
     alignItems: 'center',
     justifyContent: 'space-between',
-    flex: 12
+    flex: 1
   },
   image: {
     width: '100%',

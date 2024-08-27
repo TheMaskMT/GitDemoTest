@@ -16,13 +16,15 @@ const Fetch = () => {
             querySnapshot => {
                 const users = []
                 querySnapshot.forEach((doc) => {
-                    const { name, details, img, } = doc.data()
+                    const { name, details, img, lat, log} = doc.data()
                     users.push({
                         id: doc.id,
                         name,
                         details,
                         img,
-                    })       
+                        lat,
+                        log
+                    })
                 })
                 setUsers(users)
             }
@@ -31,39 +33,46 @@ const Fetch = () => {
     
 
     return (
-        <View style={{ flex: 1, backgroundColor: 'none', width: '100%'}}>
-            <FlatList
-                style={{width: '100%'}}
-                initialNumToRender={20}
-                data={users}
-                numColumns={1}
-                renderItem={({item}) => (
-                    <Pressable
-                        style={styles.container}
-                    >
-                        <View style={styles.innerContainer}>
-                          <Text style={styles.itemName}>{item.name}</Text>
-                          <Text style={styles.itemDetails}>{item.details}</Text>
-                          {/* <Text style={styles.itemRunTime}>{item.runtime}</Text> */}
-                            {(item.img && item.img !== "") 
-                                ? <Image
-                                    style={styles.image}
-                                    source={{
-                                        uri: item.img
-                                    }}
-                                />
-                                : <Text>{typeof item.img}</Text>
+        <>
+            <View style={{ flex: 1, backgroundColor: 'none', width: '100%'}}>    
+                <FlatList
+                    style={{width: '100%'}}
+                    initialNumToRender={20}
+                    data={users}
+                    numColumns={1}
+                    renderItem={({item}) => (
+                        <Pressable
+                            style={styles.container}
+                        >
+                            <View style={styles.innerContainer}>
+                            <Text style={styles.itemName}>{item.name}</Text>
+                            <Text style={styles.itemDetails}>{item.details}</Text>
+                            
+                            {(item.lat && item.log)
+                                ? <Text style={styles.itemPosition}>{item.lat}; {item.log}</Text>
+                                : <></>
                             }
-                          {/* <Text style={styles.itemPosition}>{item.position}</Text> */}
-                        </View>
-                    </Pressable>
-                )}
-            />
-        </View>
+                            {/* <Text style={styles.itemRunTime}>{item.runtime}</Text> */}
+                                {(item.img && item.img !== "") 
+                                    ? <Image
+                                        style={styles.image}
+                                        source={{
+                                            uri: item.img
+                                        }}
+                                    />
+                                    : <Text>{typeof item.img}</Text>
+                                }
+                            {/* <Text style={styles.itemPosition}>{item.position}</Text> */}
+                            </View>
+                        </Pressable>
+                    )}
+                />
+            </View>
+        </>
     )
 }
 
-export default Fetch
+export { Fetch }
 
 const styles = StyleSheet.create({
     container:{
@@ -91,6 +100,8 @@ const styles = StyleSheet.create({
     },
     itemPosition: {
         fontWeight: '400',
+        fontStyle: 'italic',
+        fontSize: 12
     },
     itemRunTime: {
         fontWeight: '500',

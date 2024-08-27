@@ -6,6 +6,7 @@ Hình ảnh (?)
 Ttlq (string)
 Thời gian tàu chạy (Array)
 
+
 Thể hiện trên bản đồ (web, mobile)
 
 Mobile thì lấy GPS

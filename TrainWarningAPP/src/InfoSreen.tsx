@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { StyleSheet, View } from 'react-native';
-import Fetch from './components/Fetch';
+import { Fetch } from './components/Fetch';
 
 
 export function InfoScreen({navigation}){

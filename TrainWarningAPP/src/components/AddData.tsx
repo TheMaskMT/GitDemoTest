@@ -14,16 +14,23 @@ const AddData = () => {
     
     const [addName, setAddName] = useState('')
     const [addDetails, setAddDetails] = useState('')
+    const [addLat, setAddLat] = useState('')
+    const [addLog, setAddLog] = useState('')
 
     // Lưu dữ liệu
-    const addField = (name: string | any[], details: string | any[], imgURL: string | any[]) => {
-        if (name && name.length > 0 && details && details.length > 0 && imgURL && imgURL.length > 0) {
+    const addField = (name: string | any[], details: string | any[], imgURL: string | any[], lat: number | any[], log: number | any[]) => {
+        if (name && name.length > 0 && 
+            details && details.length > 0 && 
+            imgURL && imgURL.length > 0 && 
+            lat && log ) {
             const timestamp = firebase.firestore.FieldValue.serverTimestamp()
             const data = {
                 name,
                 createAt: timestamp,
                 details,
                 img: imgURL,
+                lat,
+                log,
             }
             placeRef
                 .add(data)
@@ -32,7 +39,10 @@ const AddData = () => {
                     setAddDetails('')
                     setDisplayImage('')
                     setImage('')
+                    setAddLat('')
+                    setAddLog('')
                     Keyboard.dismiss()
+                    alert('Done','Đã upload xong!!!')
                     setAnimation(false)
                 })
                 .catch((error) => {
@@ -130,7 +140,7 @@ const AddData = () => {
                 console.log('Đang chạy test!!!')
                 getImageURL(res.FileName)
                 .then((url) =>{
-                    addField(addName, addDetails, url.URL)
+                    addField(addName, addDetails, url.URL, Number(addLat), Number(addLog))
                 })
             } 
             else {
@@ -169,20 +179,22 @@ const AddData = () => {
                             style={styles.inputPosition}
                             placeholder='Lat'
                             placeholderTextColor={'#aaaaa'}
-                            onChangeText={(name) => setAddName(name)}
-                            value={addName}
+                            onChangeText={(lat) => setAddLat(lat)}
+                            value={String(addLat)}
                             multiline={false}
                             underlineColorAndroid='transparent'
+                            keyboardType='numeric'
                             autoCapitalize='none'
                         />
                             <TextInput
                             style={styles.inputPosition}
                             placeholder='Log'
                             placeholderTextColor={'#aaaaa'}
-                            onChangeText={(name) => setAddName(name)}
-                            value={addName}
+                            onChangeText={(log) => setAddLog(log)}
+                            value={String(addLog)}
                             multiline={false}
                             underlineColorAndroid='transparent'
+                            keyboardType='numeric'
                             autoCapitalize='none'
                         />
                     </View>
@@ -202,11 +214,15 @@ const AddData = () => {
                         : <></>
                     }
                     
+                    <Progress.CircleSnail animating={animation} hidesWhenStopped= {true} color={['red', 'green', 'blue']} />
                     <TouchableOpacity style={styles.button} onPress={submit}>
                         <Text style={styles.buttonText}>Lưu</Text>
                     </TouchableOpacity>
-                    <Progress.CircleSnail animating={animation} hidesWhenStopped= {true} color={['red', 'green', 'blue']} />
 
+                    {/* <TouchableOpacity style={styles.button} onPress={submit}>
+                        <Text style={styles.buttonText}>Lưu</Text>
+                    </TouchableOpacity> */}
+                    
                 </View>
             </ScrollView>
         </SafeAreaView>
@@ -252,7 +268,6 @@ const styles = StyleSheet.create({
         fontSize: 18,
         borderRadius: 6,
         maxWidth: 145,
-        minWidth: 50,
     },
     hiddeninput: {
         borderWidth: 1,

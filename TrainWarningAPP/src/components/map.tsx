@@ -5,8 +5,10 @@ import { GoogleMap } from './googlemap';
 import { AddressModel } from '../models/AddressModel';
 import { View, StyleSheet } from 'react-native';
 import axios from 'axios';
+import { LeafletMap } from './testMAP';
+import { firebase } from '../../config';
 
-export function RefMap () {
+export function RefMap (latitude? , longitude?) {
     const [currentLocation, setCurrentLocation] = useState<AddressModel>()
 
     useEffect(() => {
@@ -37,20 +39,47 @@ export function RefMap () {
      }
    }
 
+    const [users, setUsers] = useState([])
+    const placeRef = firebase.firestore().collection('place').orderBy('name')
+
+    useEffect(() => {
+        // Trả về thuộc tính vào mảng users
+        placeRef
+        .onSnapshot(
+            querySnapshot => {
+                const users = []
+                querySnapshot.forEach((doc) => {
+                    const { name, details, img, lat, log} = doc.data()
+                    users.push({
+                        id: doc.id,
+                        name,
+                        details,
+                        img,
+                        lat,
+                        log
+                    })       
+                })
+                setUsers(users)
+            }
+        )
+    })
+
+    
+
    return (
-    <>
+    <View>
         {/* Gọi map ra */}
-        {currentLocation && (
-            GoogleMap(currentLocation.position.lat, currentLocation.position.lng)
-        )}
-    </>
+        {(latitude && longitude)
+          ? <>{LeafletMap(latitude, longitude, users)}</>
+          : <>{currentLocation && LeafletMap(currentLocation.position.lat, currentLocation.position.lng, users)}</>
+        }
+    </View>
    )
 }
 
 const styles = StyleSheet.create({
     container: {
-      flex: 1,
-      backgroundColor: '#fff',
+      // flex: 1
       alignItems: 'center',
       justifyContent: 'center',
     },

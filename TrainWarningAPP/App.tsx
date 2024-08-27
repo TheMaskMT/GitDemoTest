@@ -9,6 +9,7 @@ import { HomeScreen, HeaderLogo } from './src/HeadSrceen';
 import { InfoInputScreen } from './src/InputInfoSrceen';
 import { NativeBaseProvider } from 'native-base';
 import { DownloadMedia } from './src/DownloadMedia';
+import { MapScreen } from './src/MapSrceen';
 import { TestScreen } from './src/TestScreen';
 
 
@@ -57,7 +58,10 @@ export default function App() {
             else if (route.name === 'InputInfo') {
               iconName = focused ? 'add-circle' : 'add-circle-outline'
             } 
-            else if (route.name === 'DownloadMedia') {
+            else if (route.name === 'Map') {
+              iconName = focused ? 'map' : 'map-outline'
+            }
+            else if (route.name === 'Download') {
               iconName = focused ? 'download' : 'download-outline'
             }
             else if (route.name === 'TestZone') {
@@ -66,8 +70,10 @@ export default function App() {
 
             return (
               <Ionicons name={iconName} size={size} color={color} />
+              
             )
           },
+
           tabBarBadgeStyle: {backgroundColor: ''},
           tabBarActiveBackgroundColor: '#EB0230',
           tabBarInactiveBackgroundColor: '#0A5E7B',
@@ -78,11 +84,13 @@ export default function App() {
           tabBarItemStyle: { borderLeftWidth: 0, borderRightWidth: 1, borderColor: '#F8E5CB'}
         })}
         >
-        <Tab.Screen name = "Home" component={HomeScreen} options={{headerTitle:() => HeaderLogo("Home"), headerStyle: { backgroundColor: '#11113B'}}}/>
-        <Tab.Screen name = "Info" component={InfoScreen} options={{headerTitle:() => HeaderLogo("Info"), headerStyle: { backgroundColor: '#11113B'}}}/>
-        <Tab.Screen name = "InputInfo" component={InfoInputScreen} options={{headerTitle:() => HeaderLogo("InputInfo"), headerStyle: { backgroundColor: '#11113B'}}}/>
-        <Tab.Screen name = "DownloadMedia" component={DownloadMedia} options={{headerTitle:() => HeaderLogo("DownloadMedia"), headerStyle: { backgroundColor: '#11113B'}}}/>
-        <Tab.Screen name = "TestZone" component={TestScreen} options={{headerTitle:() => HeaderLogo("TestZone"), headerStyle: { backgroundColor: '#11113B'}}}/>
+          
+          <Tab.Screen name = "Home" component={HomeScreen} options={{headerTitle:() => HeaderLogo("Home"), headerStyle: { backgroundColor: '#11113B'}}}/>
+          <Tab.Screen name = "Info" component={InfoScreen} options={{headerTitle:() => HeaderLogo("Info"), headerStyle: { backgroundColor: '#11113B'}}}/>
+          <Tab.Screen name = "InputInfo" component={InfoInputScreen} options={{headerTitle:() => HeaderLogo("InputInfo"), headerStyle: { backgroundColor: '#11113B'}}}/>
+          <Tab.Screen name = "Map" component={MapScreen} options={{headerTitle:() => HeaderLogo("TestZone"), headerStyle: { backgroundColor: '#11113B'}}}/>
+          <Tab.Screen name = "Download" component={DownloadMedia} options={{headerTitle:() => HeaderLogo("DownloadMedia"), headerStyle: { backgroundColor: '#11113B'}}}/>
+          <Tab.Screen name = "TestZone" component={TestScreen} options={{headerTitle:() => HeaderLogo("TestZone"), headerStyle: { backgroundColor: '#11113B'}}}/>
 
         </Tab.Navigator>
       </NavigationContainer>
