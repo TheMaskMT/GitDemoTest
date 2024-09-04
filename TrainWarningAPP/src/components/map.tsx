@@ -70,8 +70,8 @@ export function RefMap (latitude? , longitude?) {
     <View>
         {/* Gọi map ra */}
         {(latitude && longitude)
-          ? <>{LeafletMap(latitude, longitude, users)}</>
-          : <>{currentLocation && LeafletMap(currentLocation.position.lat, currentLocation.position.lng, users)}</>
+          ? <>{LeafletMap(latitude, longitude, users, false)}</>
+          : <>{currentLocation && LeafletMap(currentLocation.position.lat, currentLocation.position.lng, users, true)}</>
         }
     </View>
    )

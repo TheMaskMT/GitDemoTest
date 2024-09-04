@@ -6,7 +6,7 @@ import { Fetch } from './components/Fetch';
 export function InfoScreen({navigation}){
   return(
     <View style={styles.container}>
-        <Fetch></Fetch>
+        <Fetch navigation={navigation}></Fetch>
     </View>
   );
 }

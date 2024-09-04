@@ -11,40 +11,42 @@ import { NativeBaseProvider } from 'native-base';
 import { DownloadMedia } from './src/DownloadMedia';
 import { MapScreen } from './src/MapSrceen';
 import { TestScreen } from './src/TestScreen';
+import EditData  from './src/components/EditData';
+import { MapLocation } from './src/components/MapLocation';
 
+const InfoStack = createNativeStackNavigator();
 
-const Stack = createNativeStackNavigator();
+function InfoStackScreen() {
+  return (
+    <InfoStack.Navigator screenOptions={({}) => ({
+      // headerShown: false
+    })
+    }>
+      <InfoStack.Screen name="Info" component={InfoScreen} options={{headerTitle:() => HeaderLogo("Info"), headerStyle: { backgroundColor: '#11113B'}}}/>
+      <InfoStack.Screen name="EditInfo" component={EditData} options={{headerTitle:() => HeaderLogo("EditData"), headerStyle: { backgroundColor: '#11113B'}, headerTintColor: '#F8E5CB',}}/>
+      {/* <InfoStack.Screen name="MapLocation" component={MapLocation} options={{headerTitle:() => HeaderLogo("MapLocation"), headerStyle: { backgroundColor: '#11113B'}, headerTintColor: '#F8E5CB',}}/> */}
+      <InfoStack.Screen name="MapLocation" component={MapLocation} 
+        options={{
+          headerStyle: { 
+            backgroundColor: '#11113B',
+          }, 
+          headerTintColor: '#F8E5CB', 
+          headerTitleStyle: {
+            color: '#F8E5CB',
+            fontSize: 26, 
+            fontWeight: 'bold'
+          }
+          }}/>
+    </InfoStack.Navigator>
+  )
+}
+
 const Tab = createBottomTabNavigator()
 
 export default function App() {  
   return ( 
-      // <NavigationContainer>
-      //   <NativeBaseProvider>
-      //     <Stack.Navigator 
-      //     initialRouteName="HomeTest"
-      //     screenOptions={{
-      //         headerStyle: {
-      //           backgroundColor: '#77A3E6',
-      //         },
-      //         headerTintColor: 'white',
-      //         headerTitleStyle: {
-      //           fontWeight: 'bold',
-      //         },
-      //       }}>
-      //       <Stack.Screen name = "Home" component={HomeScreen} options={{headerTitle:()=><HeaderLogo></HeaderLogo>}}></Stack.Screen>
-      //       <Stack.Screen name = "Info" component={InfoScreen}></Stack.Screen>
-      //       <Stack.Screen name = "InputInfo" component={InfoInputScreen}></Stack.Screen>
-            
-      //     </Stack.Navigator>
-      //     <View>
-      //       <FooterMenu></FooterMenu>
-      //     </View>
-      //   </NativeBaseProvider>      
-      // </NavigationContainer>
-
       <NavigationContainer>
         <Tab.Navigator 
-        
         screenOptions={({route}) => ({
           tabBarIcon: ({ focused, color, size}) => {
             let iconName
@@ -52,7 +54,7 @@ export default function App() {
             if(route.name === 'Home') {
               iconName = focused ? 'home': 'home-outline'
             }
-            else if (route.name === 'Info') {
+            else if (route.name === 'InfoStack') {
               iconName = focused ? 'settings' : 'settings-outline'
             } 
             else if (route.name === 'InputInfo') {
@@ -73,7 +75,7 @@ export default function App() {
               
             )
           },
-
+          
           tabBarBadgeStyle: {backgroundColor: ''},
           tabBarActiveBackgroundColor: '#EB0230',
           tabBarInactiveBackgroundColor: '#0A5E7B',
@@ -84,14 +86,15 @@ export default function App() {
           tabBarItemStyle: { borderLeftWidth: 0, borderRightWidth: 1, borderColor: '#F8E5CB'}
         })}
         >
-          
           <Tab.Screen name = "Home" component={HomeScreen} options={{headerTitle:() => HeaderLogo("Home"), headerStyle: { backgroundColor: '#11113B'}}}/>
-          <Tab.Screen name = "Info" component={InfoScreen} options={{headerTitle:() => HeaderLogo("Info"), headerStyle: { backgroundColor: '#11113B'}}}/>
+          <Tab.Screen name = "InfoStack" component={InfoStackScreen} 
+          // options={{headerTitle:() => HeaderLogo("Info"), headerStyle: { backgroundColor: '#11113B'}}}
+          options={{headerShown: false}}
+          />
           <Tab.Screen name = "InputInfo" component={InfoInputScreen} options={{headerTitle:() => HeaderLogo("InputInfo"), headerStyle: { backgroundColor: '#11113B'}}}/>
           <Tab.Screen name = "Map" component={MapScreen} options={{headerTitle:() => HeaderLogo("TestZone"), headerStyle: { backgroundColor: '#11113B'}}}/>
           <Tab.Screen name = "Download" component={DownloadMedia} options={{headerTitle:() => HeaderLogo("DownloadMedia"), headerStyle: { backgroundColor: '#11113B'}}}/>
           <Tab.Screen name = "TestZone" component={TestScreen} options={{headerTitle:() => HeaderLogo("TestZone"), headerStyle: { backgroundColor: '#11113B'}}}/>
-
         </Tab.Navigator>
       </NavigationContainer>
     );

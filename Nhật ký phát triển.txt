@@ -1,4 +1,4 @@
-Ngày 01/08/2024 
+Ngày 01/08/2024
     16:24
 * Lưu ý sau khi tạo project và cài bằng các câu lệnh sau
 $ npm install -g expo-cli
@@ -89,3 +89,8 @@ Ngày 20/08/2024
 
     11:47
     - Các chức năng đang không chờ nhau
+
+Ngày 29/08/2024
+    15:54
+    - Chuẩn bị làm theo mẫu của map Sonadezi
+    - 

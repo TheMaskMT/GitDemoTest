@@ -7,17 +7,21 @@ import alert from './alert';
 import { getStorage, ref, getDownloadURL } from "firebase/storage"
 import * as Progress from 'react-native-progress';
 
-const AddData = () => {
+const EditData = ({route, navigation}) => {
     const placeRef = firebase.firestore().collection('place')
     const storage = getStorage()
+    const {id, name, details, img, lat, log} = route.params
     
-    const [addName, setAddName] = useState('')
-    const [addDetails, setAddDetails] = useState('')
-    const [addLat, setAddLat] = useState('')
-    const [addLog, setAddLog] = useState('')
+    // console.log(id, name, details, img, lat, log)
+    
+    const [imageChange, setImgaeChange] = useState(false)
+    const [addName, setAddName] = useState(name)
+    const [addDetails, setAddDetails] = useState(details)
+    const [addLat, setAddLat] = useState(lat)
+    const [addLog, setAddLog] = useState(log)
 
     // Lưu dữ liệu
-    const addField = (name: string | any[], details: string | any[], imgURL: string | any[], lat: number | any[], log: number | any[]) => {
+    const updateField = (name: string | any[], details: string | any[], imgURL: string | any[], lat: number | any[], log: number | any[]) => {
         if (name && name.length > 0 && 
             details && details.length > 0 && 
             imgURL && imgURL.length > 0 && 
@@ -32,8 +36,10 @@ const AddData = () => {
                 log,
             }
             placeRef
-                .add(data)
+                .doc(id)
+                .update(data)
                 .then(() => {
+                    setImgaeChange(false)
                     setAddName('')
                     setAddDetails('')
                     setDisplayImage('')
@@ -43,6 +49,7 @@ const AddData = () => {
                     Keyboard.dismiss()
                     alert('Đã upload xong!!!')
                     setAnimation(false)
+                    navigation.navigate('Info')
                 })
                 .catch((error) => {
                     alert(error)
@@ -55,9 +62,9 @@ const AddData = () => {
     }   
 
     const [image, setImage] = useState(null)
-    const [displayImage, setDisplayImage] = useState(null)
+    const [displayImage, setDisplayImage] = useState(img)
     const [uploading, setUploading] = useState(false)
-    
+
     const pickImage = async () => {
         let result = await ImagePicker.launchImageLibraryAsync({
             mediaTypes: ImagePicker.MediaTypeOptions.All,
@@ -76,6 +83,7 @@ const AddData = () => {
         console.log(source)
         setImage(source)
         
+       setImgaeChange(true)
         //logFileName()
 
     }
@@ -84,8 +92,8 @@ const AddData = () => {
         setUploading(true)
         const response = await fetch(image.uri)
         const blob = await response.blob()
-        const filename = image.uri.substring(image.uri.lastIndexOf('/')+1)
-      
+        const filename = image.uri.substring(image.uri.lastIndexOf('/') + 1)
+
         const result = {
             IsSuccess: false,
             ErrorMessage: '',
@@ -103,7 +111,6 @@ const AddData = () => {
             result.ErrorMessage = e
             return result
         }
-       
     }
 
     const getImageURL = async (nameImage) => {
@@ -115,7 +122,7 @@ const AddData = () => {
         
         try {
             var url = await getDownloadURL(ref(storage, nameImage)) 
-            if(url) {    
+            if(url) {
                 result.IsSuccess = true
                 result.URL = url
             }
@@ -123,7 +130,7 @@ const AddData = () => {
         } catch (e) {
             result.ErrorMessage = e
             return result
-        }    
+        }
     }
 
     const [animation, setAnimation] = useState(false)
@@ -131,7 +138,10 @@ const AddData = () => {
     const submit = () =>
     {
         setAnimation(true)
-        // console.log('Đang chạy!!!')
+        console.log('Đang chạy!!!')
+        {(imageChange)
+        ? (
+        // console.log('Có sửa ảnh!!!'),
         UploadMediaWeb()
         .then((res) => {
             // console.log('Done!!!')
@@ -139,20 +149,25 @@ const AddData = () => {
                 // console.log('Đang chạy test!!!')
                 getImageURL(res.FileName)
                 .then((url) =>{
-                    addField(addName, addDetails, url.URL, Number(addLat), Number(addLog))
+                    updateField(addName, addDetails, url.URL, Number(addLat), Number(addLog))
                 })
-            } 
+            }
             else {
                 console.log('Không chạy được test!!!')
             }
-        })
+        }))
+        : (
+            // console.log('Không có sửa ảnh!!!'),
+            updateField(addName, addDetails, img, Number(addLat), Number(addLog))
+        )}
     }
 
     return (
         <SafeAreaView style={styles.container}>
             <ScrollView style={styles.scrollview} persistentScrollbar={false} contentContainerStyle={{justifyContent: 'center', alignItems: 'center'}}>
                 <View style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '90%'}}>
-                    <Text style = {styles.header}>Nhập dữ liệu địa điểm</Text>
+                    {/* <Text style = {styles.header}>Id được truyền vào là {id}</Text> */}
+                    <Text style = {styles.header}>Sửa dữ liệu địa điểm</Text>
                     <TextInput
                         style={styles.input}
                         placeholder='Tên'
@@ -217,8 +232,8 @@ const AddData = () => {
                     <TouchableOpacity style={styles.button} onPress={submit}>
                         <Text style={styles.buttonText}>Lưu</Text>
                     </TouchableOpacity>
-
-                    {/* <TouchableOpacity style={styles.button} onPress={submit}>
+{/* 
+                    <TouchableOpacity style={styles.button} onPress={submit}>
                         <Text style={styles.buttonText}>Lưu</Text>
                     </TouchableOpacity> */}
                     
@@ -228,7 +243,7 @@ const AddData = () => {
     )
 }
 
-export default AddData
+export default EditData
 
 const styles = StyleSheet.create({
     container: {

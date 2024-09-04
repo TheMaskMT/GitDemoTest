@@ -1,16 +1,17 @@
 import * as React from 'react'
-import { useEffect, useState } from 'react'
-import { View, StyleSheet } from 'react-native'
+import { useEffect, useState, useRef } from 'react'
+import { View, StyleSheet, TouchableOpacity, Text} from 'react-native'
 import { MapContainer, TileLayer, useMap, Marker, Popup } from 'react-leaflet'
 import "leaflet/dist/leaflet.css"
 import "../styles/style.css"
 import { Icon } from "leaflet"
-import MarkerClustererGroup from 'react-leaflet-cluster'
 
-const LeafletMap = (lat, lng, markerList) => {
+
+const LeafletMap = (lat, lng, markerList, here) => {
     const position = [lat, lng]
     // const markers = markerList
     // console.log("===========>" + markers)
+    
 
     const markers = []
     for (let i = 0; i < markerList.length; i++) {
@@ -24,6 +25,7 @@ const LeafletMap = (lat, lng, markerList) => {
             : [0, 0]
         })
     }
+
     // console.log("===========>" + markerList)
     // const markers = [
     //     {
@@ -46,6 +48,11 @@ const LeafletMap = (lat, lng, markerList) => {
         iconSize: [24, 24]
     })
 
+    const HomeIcon = new Icon({
+        iconUrl: "../../assets/maps-and-flags.png",
+        iconSize: [30, 30]
+    })
+
     return (
         // <View>
         //     <Text style={{flex: 1, textAlign: "center"}}></Text>
@@ -53,7 +60,14 @@ const LeafletMap = (lat, lng, markerList) => {
         <>
         <View>
             {/* <Text style={{flex: 1}}></Text> */}
-            <MapContainer center={position} zoom={13}>
+            <MapContainer
+                style={{height: '87.5vh'}}
+                center={position}
+                zoom={20}
+                // whenCreated={() => {
+                //     mapRef.current = map
+                // }}
+            >
                 <TileLayer
                     attribution='&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -75,18 +89,27 @@ const LeafletMap = (lat, lng, markerList) => {
                 </MarkerClustererGroup> */}
                 
                 {markers.map(marker => (
-                        (marker.geocode && marker.geocode.every !== undefined)
-                        ?  <Marker position={marker.geocode} icon={customIcon}>
-                                <Popup>
-                                    <div style={styles.header}>{marker.header}</div>
-                                    <div style={styles.details}>{marker.details}</div>
-                                    {(marker.img && marker.img !== null)
-                                    ? <img src={marker.img} height={150} width={300}></img>
-                                    : <></>}
-                                </Popup>
-                            </Marker>
-                        : <></>
-                    ))}
+                    (marker.geocode && marker.geocode.every !== undefined)
+                    ?  <Marker position={marker.geocode} icon={customIcon}>
+                            <Popup>
+                                <div style={styles.header}>{marker.header}</div>
+                                <div style={styles.details}>{marker.details}</div>
+                                {(marker.img && marker.img !== null)
+                                ? <img src={marker.img} height={150} width={300}></img>
+                                : <></>}
+                            </Popup>
+                        </Marker>
+                    : <></>
+                ))}
+                {(here == true)
+                ? <Marker position={position} icon={HomeIcon}>
+                    <Popup>
+                        <div style={styles.header}>Bạn</div>
+                        <div style={styles.details}>Đây là chỗ bạn đang đứng!!!</div>
+                    </Popup>
+                </Marker>
+                :<></>
+                }
             </MapContainer>
         </View>
         </>
@@ -106,5 +129,22 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         textAlign: 'center',
-    }
+    },
+    button: {
+        borderRadius: 5,
+        width: 'auto',
+        padding: 10,
+        height: 'auto',
+        backgroundColor: '#3465B5',
+        alignItems: 'center',
+        justifyContent: 'center',
+        flex: 1,
+        marginHorizontal: 20,
+        marginBottom: 10,
+    },
+    buttonText: {
+        color: '#fff',
+        fontSize: 18,
+        fontWeight: 'bold'
+    },
 });
