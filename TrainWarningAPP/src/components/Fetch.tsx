@@ -17,26 +17,29 @@ const Fetch = ({navigation}) => {
             querySnapshot => {
                 const users = []
                 querySnapshot.forEach((doc) => {
-                    const { name, details, img, lat, log} = doc.data()
+                    const { name, details, img, lat, log, createAt} = doc.data()
                     users.push({
                         id: doc.id,
                         name,
                         details,
                         img,
                         lat,
-                        log
+                        log,
+                        createAt
                     })
                 })
                 setUsers(users)
             }
         )
-
-        const updateLayout = () =>{
-            setWin(Dimensions.get('window').width)
-        }
-        Dimensions.addEventListener('change', updateLayout)
-    })
+        console.log('useEffect đang chạy!')
+        
+    }, [])
     
+    const updateLayout = () =>{
+        setWin(Dimensions.get('window').width)
+    }
+    Dimensions.addEventListener('change', updateLayout)
+
     return (
         <>
             <View style={{ flex: 1, backgroundColor: 'none', width: '100%'}}>

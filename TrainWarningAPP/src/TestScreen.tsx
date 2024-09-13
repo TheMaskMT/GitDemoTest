@@ -4,8 +4,10 @@ import { RefMap } from './components/map';
 import { View } from 'native-base';
 import { Ionicons } from '@expo/vector-icons';
 import alert from './components/alert';
-import testzone from './components/testZone';
-import TestZoneTSX from './components/testZoneTSX';
+import TestZone from './test/testZone';
+import TestZoneTSX from './test/testZoneTSX';
+import useStateTest from './test/useStateExample'
+import test from './test/test'
 
 export function TestScreen(){
   return (
@@ -14,8 +16,8 @@ export function TestScreen(){
       {/* <View style={{flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: 'red'}}>
         <Text>TestScreen</Text>
       </View> */}
-      {testzone()}
-      
+      {test()}
+      {/* {useStateTest()} */}
     </SafeAreaView>
   )
 }

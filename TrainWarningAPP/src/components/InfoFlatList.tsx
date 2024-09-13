@@ -64,21 +64,28 @@ const InfoFlatList = ({navigation}, users, key, numColumns, minHeight) => {
                     }}
                 >
                     {(item.img && item.img !== "") 
-                                ? <Image
-                                    style={[styles.image, {minHeight: minHeight}
-                                    //    {width: win/100*85, height: 870*(win/1918)}
-                                    ]}
-                                    source={{
-                                        uri: item.img
-                                    }}
-                                />
-                                : <Text>{typeof item.img}</Text>
-                            }
+                        ? <Image
+                            style={[styles.image, {minHeight: minHeight}
+                            //    {width: win/100*85, height: 870*(win/1918)}
+                            ]}
+                            source={{
+                                uri: item.img
+                            }}
+                        />
+                        : <Text>{typeof item.img}</Text>
+                    }
+
                     <View style={styles.innerContainer}>
                         {/* <Text style={styles.itemName}>{item.id}</Text> */}
                         <Text style={styles.itemName}>{item.name}</Text>
                         <Text style={styles.itemDetails}>{item.details}</Text>
-                        
+                        <Text style={styles.itemName}>
+                            {new Date((item.createAt.seconds+item.createAt.nanoseconds/1000000000)*1000).toDateString()}
+                            -
+                            {new Date((item.createAt.seconds+item.createAt.nanoseconds/1000000000)*1000).toTimeString()}
+                            {/* {item.createAt.toString()} */}
+                        </Text>
+
                         {(item.lat && item.log)
                             ? <Text style={styles.itemPosition}>{item.lat}; {item.log}</Text>
                             : <></>
@@ -88,16 +95,16 @@ const InfoFlatList = ({navigation}, users, key, numColumns, minHeight) => {
                         {/* <Text style={styles.itemPosition}>{item.position}</Text> */}
                     </View>
                     <View style={styles.buttonContainer}>
-                            <TouchableOpacity style={styles.editButton} onPress={() => editPlace(item.id, item.name, item.details, item.img, item.lat, item.log)}>
-                                <Ionicons name={'pencil'} size={24} color={'#EFBF7F'} />
-                            </TouchableOpacity>
-                            <TouchableOpacity style={styles.deleteButton} onPress={() => detelePlace(item.id)}>
-                                <Ionicons name={'trash-bin'} size={24} color={'#EFBF7F'} />
-                            </TouchableOpacity>
-                            {/* <TouchableOpacity style={styles.deleteButton} onPress={() => MapPlace(item.id, item.name, item.details, item.img, item.lat, item.log)}>
-                                <Ionicons name={'map'} size={24} color={'#EFBF7F'} />
-                            </TouchableOpacity> */}
-                        </View>
+                        <TouchableOpacity style={styles.editButton} onPress={() => editPlace(item.id, item.name, item.details, item.img, item.lat, item.log)}>
+                            <Ionicons name={'pencil'} size={24} color={'#EFBF7F'} />
+                        </TouchableOpacity>
+                        <TouchableOpacity style={styles.deleteButton} onPress={() => detelePlace(item.id)}>
+                            <Ionicons name={'trash-bin'} size={24} color={'#EFBF7F'} />
+                        </TouchableOpacity>
+                        {/* <TouchableOpacity style={styles.deleteButton} onPress={() => MapPlace(item.id, item.name, item.details, item.img, item.lat, item.log)}>
+                            <Ionicons name={'map'} size={24} color={'#EFBF7F'} />
+                        </TouchableOpacity> */}
+                    </View>
                 </Pressable>
             )}
         />
@@ -117,6 +124,8 @@ const styles = StyleSheet.create({
         alignContent: 'center',
         justifyContent: 'center',
         flex: 1,
+        borderColor: '#11113B',
+        borderWidth: 1,
         
     },
     innerContainer:{

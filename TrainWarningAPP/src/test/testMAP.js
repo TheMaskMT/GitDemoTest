@@ -63,7 +63,7 @@ const LeafletMap = (lat, lng, markerList, here) => {
             <MapContainer
                 style={{height: '87.5vh'}}
                 center={position}
-                zoom={20}
+                zoom={(here==true)?17:18}
                 // whenCreated={() => {
                 //     mapRef.current = map
                 // }}

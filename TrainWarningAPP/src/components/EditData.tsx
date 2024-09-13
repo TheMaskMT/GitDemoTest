@@ -1,5 +1,6 @@
-import { View, Text, StyleSheet, Pressable, TextInput, Keyboard, ScrollView, Image, TouchableOpacity } from 'react-native'
+import { View, Text, StyleSheet, Pressable, Keyboard, ScrollView, Image, TouchableOpacity } from 'react-native'
 import React, {useState} from 'react'
+import { TextInput } from 'react-native-paper';
 import { firebase } from '../../config'
 import { SafeAreaView } from 'react-native-safe-area-context';
 import * as ImagePicker from 'expo-image-picker'
@@ -170,8 +171,9 @@ const EditData = ({route, navigation}) => {
                     <Text style = {styles.header}>Sửa dữ liệu địa điểm</Text>
                     <TextInput
                         style={styles.input}
+                        label='Tên'
                         placeholder='Tên'
-                        placeholderTextColor={'#aaaaa'}
+                        placeholderTextColor={'#B8B8B8'}
                         onChangeText={(name) => setAddName(name)}
                         value={addName}
                         multiline={false}
@@ -179,20 +181,21 @@ const EditData = ({route, navigation}) => {
                         autoCapitalize='none'
                     />
                     <TextInput
-                        style={styles.input}
+                        style={[styles.input, { textAlignVertical: 'top', }]}
+                        label='Chi tiết'
                         placeholder='Chi tiết'
-                        placeholderTextColor={'#aaaaa'}
+                        placeholderTextColor={'#B8B8B8'}
                         onChangeText={(details) => setAddDetails(details)}
                         value={addDetails}
-                        multiline={true}
                         underlineColorAndroid='transparent'
                         autoCapitalize='none'
                     />
                     <View style={styles.positionContainer}>
                         <TextInput
                             style={styles.inputPosition}
+                            label='Lat'
                             placeholder='Lat'
-                            placeholderTextColor={'#aaaaa'}
+                            placeholderTextColor={'#B8B8B8'}
                             onChangeText={(lat) => setAddLat(lat)}
                             value={String(addLat)}
                             multiline={false}
@@ -200,10 +203,11 @@ const EditData = ({route, navigation}) => {
                             keyboardType='numeric'
                             autoCapitalize='none'
                         />
-                            <TextInput
+                        <TextInput
                             style={styles.inputPosition}
+                            label='Log'
                             placeholder='Log'
-                            placeholderTextColor={'#aaaaa'}
+                            placeholderTextColor={'#B8B8B8'}
                             onChangeText={(log) => setAddLog(log)}
                             value={String(addLog)}
                             multiline={false}
@@ -229,10 +233,11 @@ const EditData = ({route, navigation}) => {
                     }
                     
                     <Progress.CircleSnail animating={animation} hidesWhenStopped= {true} color={['red', 'green', 'blue']} />
+                    
                     <TouchableOpacity style={styles.button} onPress={submit}>
                         <Text style={styles.buttonText}>Lưu</Text>
                     </TouchableOpacity>
-{/* 
+                    {/* 
                     <TouchableOpacity style={styles.button} onPress={submit}>
                         <Text style={styles.buttonText}>Lưu</Text>
                     </TouchableOpacity> */}
@@ -264,23 +269,32 @@ const styles = StyleSheet.create({
         marginTop: 10,
     },
     input: {
-        borderWidth: 1,
-        borderColor: 'black',
+        // borderWidth: 1,
+        // borderColor: 'black',
         marginVertical: 5,
         padding: 10,
-        fontSize: 18,
-        borderRadius: 6,
+        // fontSize: 18,
+        // borderRadius: 6,
         maxWidth: 600,
         minWidth: 300,
     },
+    positionContainer: {
+        flex: 1,
+        flexDirection: 'row',
+        maxWidth: 600,
+        justifyContent: 'center',
+        alignItems: 'center',
+        margin: 5,
+        marginVertical: 15,
+    },
     inputPosition: {
-        borderWidth: 1,
-        borderColor: 'black',
+        // borderWidth: 1,
+        // borderColor: 'black',
         marginVertical: 10,
         marginHorizontal: 5,
         padding: 10,
-        fontSize: 18,
-        borderRadius: 6,
+        // fontSize: 18,
+        // borderRadius: 6,
         maxWidth: 145,
     },
     hiddeninput: {
@@ -321,15 +335,7 @@ const styles = StyleSheet.create({
         fontSize: 18,
         fontWeight: 'bold'
     },
-    positionContainer: {
-        flex: 1, 
-        flexDirection: 'row', 
-        maxWidth: 600,
-        justifyContent: 'center',
-        alignItems: 'center',
-        margin: 5
-        
-    },
+    
     uploadButton: {
         borderRadius: 5,
         width: 'auto',

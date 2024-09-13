@@ -1,16 +1,15 @@
 Thu thập dữ liệu thông tin điểm giao tàu hỏa
 Các trường thông tin:
-Tên (string)
-Tọa độ (string)
-Hình ảnh (?)
-Ttlq (string)
-Thời gian tàu chạy (Array)
-
+Tên (string) `
+Tọa độ (string) `
+Hình ảnh (?) `
+Ttlq (string) `
+Thời gian tàu chạy (Array) `
 
 Thể hiện trên bản đồ (web, mobile)
 
-Mobile thì lấy GPS
-Cảnh báo tàu chạy
+Mobile thì lấy GPS 
+Cảnh báo tàu chạy 
 
 Admin thì nhập liệu bằng tay
 User thì xem
@@ -22,4 +21,11 @@ Luôn phải có cơ sở dữ liệu trước
 Về cơ sở dữ liệu phải biết vị trí Lưu
 Ngay cả demo thì cũng phải làm cho nó nhìn được, không có dữ liệu linh tinh
 Laptop thì chỉ lấy wifi để xác định vị trí, có thể không chuẩn
-Hoàn thành rồi hẵng nói
+
+~~~~~~~~~~~~~~~~ Đặc biệt nhớ 2: ~~~~~~~~~~~~~~~~
+Luôn nghĩ làm sao để làm tốt hơn nữa
+Nhìn theo góc nhìn của người dùng
+
+Cố gắng hoạt động lên, nói nhiều hơn
+Có việc thì cứ hỏi mấy anh
+Cố gắng thể hiện bản thân nhiều hơn

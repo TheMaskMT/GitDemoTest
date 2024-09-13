@@ -93,4 +93,37 @@ Ngày 20/08/2024
 Ngày 29/08/2024
     15:54
     - Chuẩn bị làm theo mẫu của map Sonadezi
-    - 
+
+Ngày 04/09/2024
+    17:38
+    - Đã thêm được bản đồ theo khi ấn vào Info
+    - Thiếu popup ngay khi chuyển sang map. Có hai hướng xử lý: Một là cố làm popup, hai là tạo một layout riêng.
+    - Giờ có 2 việc cần làm: 1 là chỉnh lại EditData, 2 là thêm trường time
+
+Ngày 05/09/2024
+    11:46
+    - Đầu tiên cho admin đặt ngày, sau đó họ có thể thoải mái chọn giờ.
+    - Ngày thì phải cố định
+
+    16:21
+    - Date sau khi chọn là thứ nhất
+    - Cú pháp date timestamp lên firebase chưa rõ
+    - Chọn nhiều lần...
+    - Thật ra thứ admin cần tương tác nhiều nhất là thời gian tàu chạy đúng không?
+
+Ngày 06/09/2024
+    12:32
+    - Cái cần là dữ liệu
+    - Khảo sát thực tế
+    - Giờ cố định
+
+Ngày 11/09/2024
+    - Kết quả khảo sát thực tế: 
+        * Tàu chở khách sẽ chạy theo một giờ cố định trong ngày
+        * Tàu chở hàng sẽ chạy theo một thời gian đã lên kế hoạch trước
+        * Các tàu sẽ có khả năng bị ảnh hưởng giờ chạy do thiên tai
+    - Đã có thể báo động khi tới một giờ đã cho sẵn (Như báo thức)
+    - Nhưng làm sao để nó báo động với một số lượng lớn 
+    
+Ngày 12/09/2024
+    - Làm lại InfoScreen bằng react-card cho dễ nhìn hơn

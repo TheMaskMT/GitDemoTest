@@ -3,6 +3,7 @@ import { StyleSheet } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { DefaultTheme, Provider as PaperProvider, Surface } from 'react-native-paper';
 import { Ionicons } from '@expo/vector-icons';
 import { InfoScreen } from './src/InfoSreen';
 import { HomeScreen, HeaderLogo } from './src/HeadSrceen';
@@ -41,10 +42,26 @@ function InfoStackScreen() {
   )
 }
 
+const theme = {
+  ...DefaultTheme,
+  roundness: 5,
+  colors: {
+    ...DefaultTheme.colors,
+    primary: '#11113B',
+    accent: '#0A5E7B',
+    surface: '#EFBF7F',
+    background: '#EFBF7F',
+    text: '#000000',
+    placeholder: '#b8b8b8',
+    backdrop: ''
+  },
+};
+
 const Tab = createBottomTabNavigator()
 
 export default function App() {  
-  return ( 
+  return (
+    <PaperProvider theme={theme}>
       <NavigationContainer>
         <Tab.Navigator 
         screenOptions={({route}) => ({
@@ -87,7 +104,7 @@ export default function App() {
         })}
         >
           <Tab.Screen name = "Home" component={HomeScreen} options={{headerTitle:() => HeaderLogo("Home"), headerStyle: { backgroundColor: '#11113B'}}}/>
-          <Tab.Screen name = "InfoStack" component={InfoStackScreen} 
+          <Tab.Screen name = "InfoStack" component={InfoStackScreen}
           // options={{headerTitle:() => HeaderLogo("Info"), headerStyle: { backgroundColor: '#11113B'}}}
           options={{headerShown: false}}
           />
@@ -97,6 +114,7 @@ export default function App() {
           <Tab.Screen name = "TestZone" component={TestScreen} options={{headerTitle:() => HeaderLogo("TestZone"), headerStyle: { backgroundColor: '#11113B'}}}/>
         </Tab.Navigator>
       </NavigationContainer>
+    </PaperProvider>
     );
 }
 

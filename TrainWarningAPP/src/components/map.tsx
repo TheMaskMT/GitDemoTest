@@ -5,7 +5,7 @@ import { GoogleMap } from './googlemap';
 import { AddressModel } from '../models/AddressModel';
 import { View, StyleSheet } from 'react-native';
 import axios from 'axios';
-import { LeafletMap } from './testMAP';
+import { LeafletMap } from '../test/testMAP';
 import { firebase } from '../../config';
 
 export function RefMap (latitude? , longitude?) {
