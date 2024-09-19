@@ -1,13 +1,17 @@
 import * as React from 'react';
-import { StyleSheet, TouchableOpacity, Text, SafeAreaView } from 'react-native';
+import { StyleSheet, TouchableOpacity, Text, SafeAreaView, Platform } from 'react-native';
 import { RefMap } from './components/map';
 import { View } from 'native-base';
+import { IndevelopScreen } from './IndevelopScreen';
 
 export function MapScreen({navigation}){
-
   return(
     <SafeAreaView style={styles.container}>
-      {RefMap()}
+      {
+        (Platform.OS === 'android') 
+        ? IndevelopScreen()
+        : RefMap()
+      }
     </SafeAreaView>
   );
 }

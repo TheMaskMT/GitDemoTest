@@ -1,21 +1,10 @@
-
 import { Map, MapContainer, TileLayer, Marker, Popup, useMapEvents } from 'react-leaflet'
 import React, { useState, useRef, useEffect } from 'react'
 import { View, StyleSheet, TouchableOpacity, TextInput, Text } from 'react-native'
 import L, { Icon } from "leaflet"
-import 'leaflet/dist/leaflet.css'
-import 'leaflet/dist/leaflet'
-import './../styles/style.css'
-
-const magicKingdomLatLng = [28.3852, -81.5639]
-
-const HandleClickMap = () => {
-  const map = useMapEvents({
-    click(e) {
-      console.log(e)
-    }
-  })
-}
+// import 'leaflet/dist/leaflet.css'
+// import 'leaflet/dist/leaflet'
+// import './../styles/style.css'
 
 export default function TestZone() {
 

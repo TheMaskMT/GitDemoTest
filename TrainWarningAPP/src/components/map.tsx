@@ -1,29 +1,31 @@
 import * as React from 'react';
 import { useEffect, useState } from 'react';
-import GeoLocation from '@react-native-community/geolocation'
-import { GoogleMap } from './googlemap';
+import Geolocation from '@react-native-community/geolocation'
 import { AddressModel } from '../models/AddressModel';
-import { View, StyleSheet } from 'react-native';
+import { View, StyleSheet, Text } from 'react-native';
 import axios from 'axios';
 import { LeafletMap } from '../test/testMAP';
 import { firebase } from '../../config';
 
+
 export function RefMap (latitude? , longitude?) {
     const [currentLocation, setCurrentLocation] = useState<AddressModel>()
-
-    useEffect(() => {
-     GeoLocation.getCurrentPosition(position =>{
-       if(position.coords)
-       {
-         reverseGeoCode({
-           lat: position.coords.latitude, 
-           lng: position.coords.longitude,
-         })
-         console.log(position.coords.latitude, position.coords.longitude)
-       }
-     });
-   }, []);
+  //  const [currentLocation, setCurrentLocation] = useState(null);
+  //  const [alertTriggered, setAlertTriggered] = useState(false);
  
+   useEffect(() => {
+    Geolocation.getCurrentPosition(position =>{
+      if(position.coords)
+      {
+        reverseGeoCode({
+          lat: position.coords.latitude, 
+          lng: position.coords.longitude,
+        })
+        console.log(position.coords.latitude, position.coords.longitude)
+      }
+    });
+   }, []);
+
    const reverseGeoCode = async ({lat, lng}: {lat: number; lng: number}) =>{
      const api = 'https://revgeocode.search.hereapi.com/v1/revgeocode?at='+lat+','+lng+'&lang=en-US&apiKey=f-dbVATubYC578CzxN6hMXJWu5wkgtLyf42CUBaQOSc'
      
@@ -43,28 +45,26 @@ export function RefMap (latitude? , longitude?) {
     const placeRef = firebase.firestore().collection('place').orderBy('name')
 
     useEffect(() => {
-        // Trả về thuộc tính vào mảng users
-        placeRef
-        .onSnapshot(
-            querySnapshot => {
-                const users = []
-                querySnapshot.forEach((doc) => {
-                    const { name, details, img, lat, log} = doc.data()
-                    users.push({
-                        id: doc.id,
-                        name,
-                        details,
-                        img,
-                        lat,
-                        log
-                    })       
-                })
-                setUsers(users)
-            }
-        )
-    })
-
-    
+      // Trả về thuộc tính vào mảng users
+      placeRef
+      .onSnapshot(
+        querySnapshot => {
+          const users = []
+          querySnapshot.forEach((doc) => {
+            const { name, details, img, lat, log} = doc.data()
+            users.push({
+              id: doc.id,
+              name,
+              details,
+              img,
+              lat,
+              log
+            })
+          })
+          setUsers(users)
+        }
+      )
+    }, [])
 
    return (
     <View>

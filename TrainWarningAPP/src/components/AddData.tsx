@@ -56,6 +56,10 @@ const AddData = () => {
                     setImage('')
                     setAddLat('')
                     setAddLog('')
+                    setFixedTime(dayjs(new Date().toISOString()))                    
+                    setFixedTimeArray([])
+                    setFlexibleTime(dayjs(new Date().toISOString())) 
+                    setFlexibleTimeArray([])
                     Keyboard.dismiss()
                     alert('Đã upload xong!!!')
                     setAnimation(false)
@@ -154,7 +158,7 @@ const AddData = () => {
                     // console.log('Đang chạy test!!!')
                     getImageURL(res.FileName)
                         .then((url) => {
-                            addField(addName, addDetails, url.URL, Number(addLat), Number(addLog), 'tạm thời chưa có', fixedTimeArray)
+                            addField(addName, addDetails, url.URL, Number(addLat), Number(addLog), flexibleTimeArray, fixedTimeArray)
                         })
                 }
                 else {
@@ -195,7 +199,7 @@ const AddData = () => {
     return (
         <SafeAreaView style={styles.container}>
             <ScrollView style={styles.scrollview} persistentScrollbar={false} contentContainerStyle={{ justifyContent: 'center', alignItems: 'center' }}>
-                <View style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '90%' }}>
+            <View style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '90%' }}>
                     <Text style={styles.header}>Nhập dữ liệu địa điểm</Text>
                     <TextInput
                         style={styles.input}
@@ -248,7 +252,9 @@ const AddData = () => {
                     <LocalizationProvider
                         dateAdapter={AdapterDayjs}>
                         <View style={{flexDirection: 'row'}}>
-                            <View style={styles.timecontainer}>
+                            {/* <View 
+                                style={styles.timecontainer}
+                            >
                                 <DateTimePicker
                                     label="Giờ tàu chạy linh hoạt"
                                     format='DD-MM-YYYY HH:mm'
@@ -267,13 +273,12 @@ const AddData = () => {
                                             <Button onPress={() => deleteFlexibleTime(index)}>
                                                 Delete
                                             </Button>
-                                            
                                         </Text>
                                     ))}
                                 </View>
-                            </View>
+                            </View> */}
 
-                            <View style={styles.timecontainer}>
+                            {/* <View style={styles.timecontainer}>
                                 <TimePicker 
                                     label="Giờ tàu chạy cố định" 
                                     ampm={false}
@@ -293,14 +298,11 @@ const AddData = () => {
                                     </Text>
                                 ))}
                                 </View>
-                            </View>
+                            </View> */}
+                            <Text>Thử nghiệm Localization</Text>
                         </View>
                     </LocalizationProvider>
-                    
-                    
-
-                   
-
+  
                     {/* Dùng TouchableOpacity vì nó đơn giản, cần phức tạp thì Pressable */}
                     <TouchableOpacity style={styles.selectButton} onPress={pickImage}>
                         <Text style={styles.buttonText}>Chọn ảnh</Text>
@@ -325,10 +327,13 @@ const AddData = () => {
                     <TouchableOpacity style={styles.button} onPress={dummyData}>
                         <Text style={styles.buttonText}>Dummy data</Text>
                     </TouchableOpacity>
-
+                    <Text>Thử nghiệm lần nữa</Text>
                 </View>
+                
             </ScrollView>
+            
         </SafeAreaView>
+        
     )
 }
 

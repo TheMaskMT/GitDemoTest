@@ -7,11 +7,12 @@ import * as ImagePicker from 'expo-image-picker'
 import alert from './alert';
 import { getStorage, ref, getDownloadURL } from "firebase/storage"
 import * as Progress from 'react-native-progress';
+import dayjs, { Dayjs } from 'dayjs';
 
 const EditData = ({route, navigation}) => {
     const placeRef = firebase.firestore().collection('place')
     const storage = getStorage()
-    const {id, name, details, img, lat, log} = route.params
+    const {id, name, details, img, lat, log, fixedArray, flexibleArray} = route.params
     
     // console.log(id, name, details, img, lat, log)
     
@@ -21,8 +22,13 @@ const EditData = ({route, navigation}) => {
     const [addLat, setAddLat] = useState(lat)
     const [addLog, setAddLog] = useState(log)
 
+    const [flexibleTime, setFlexibleTime] = useState<Dayjs | null>(dayjs(new Date().toISOString()))
+    const [flexibleTimeArray, setFlexibleTimeArray] = useState(flexibleArray)
+    const [fixedTime, setFixedTime] = useState<Dayjs | null>(dayjs(new Date().toISOString()))
+    const [fixedTimeArray, setFixedTimeArray] = useState(fixedArray)
+
     // Lưu dữ liệu
-    const updateField = (name: string | any[], details: string | any[], imgURL: string | any[], lat: number | any[], log: number | any[]) => {
+    const updateField = (name: string | any[], details: string | any[], imgURL: string | any[], lat: number | any[], log: number | any[], fixedtime, flexibletime) => {
         if (name && name.length > 0 && 
             details && details.length > 0 && 
             imgURL && imgURL.length > 0 && 
@@ -35,6 +41,8 @@ const EditData = ({route, navigation}) => {
                 img: imgURL,
                 lat,
                 log,
+                fixedtime, 
+                flexibletime
             }
             placeRef
                 .doc(id)
@@ -47,6 +55,10 @@ const EditData = ({route, navigation}) => {
                     setImage('')
                     setAddLat('')
                     setAddLog('')
+                    setFixedTime(dayjs(new Date().toISOString()))                    
+                    setFixedTimeArray([])
+                    setFlexibleTime(dayjs(new Date().toISOString())) 
+                    setFlexibleTimeArray([])
                     Keyboard.dismiss()
                     alert('Đã upload xong!!!')
                     setAnimation(false)
@@ -150,7 +162,7 @@ const EditData = ({route, navigation}) => {
                 // console.log('Đang chạy test!!!')
                 getImageURL(res.FileName)
                 .then((url) =>{
-                    updateField(addName, addDetails, url.URL, Number(addLat), Number(addLog))
+                    updateField(addName, addDetails, url.URL, Number(addLat), Number(addLog), flexibleTimeArray, fixedTimeArray)
                 })
             }
             else {
@@ -159,8 +171,30 @@ const EditData = ({route, navigation}) => {
         }))
         : (
             // console.log('Không có sửa ảnh!!!'),
-            updateField(addName, addDetails, img, Number(addLat), Number(addLog))
+            updateField(addName, addDetails, img, Number(addLat), Number(addLog), flexibleTimeArray, fixedTimeArray)
         )}
+    }
+
+    const addFlexibleTime = () => {
+        const newItem = flexibleTime.toDate()
+        setFlexibleTimeArray(prevItems => [...prevItems, newItem])
+    }
+
+    const deleteFlexibleTime = (index) => {
+        const updatedItems = flexibleTimeArray.filter((_, i) => i !== index); // Filter out the item by index
+        setFlexibleTimeArray(updatedItems);
+        // console.log(index)
+    }
+
+    const addFixedTime = () => {
+        const newItem = fixedTime.toDate()
+        setFixedTimeArray(prevItems => [...prevItems, newItem])
+    }
+
+    const deleteFixedTime = (index) => {
+        const updatedItems = fixedTimeArray.filter((_, i) => i !== index); // Filter out the item by index
+        setFixedTimeArray(updatedItems);
+        // console.log(index)
     }
 
     return (

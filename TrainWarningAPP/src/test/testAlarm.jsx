@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { minutesNumber, hourNumber } from './testFixNumber';
+import { minutesNumber, hourNumber } from './testZone2';
 import useSelect from './testUseSelect';
 import { AlarmContext } from '../context/Alarm';
 // import './alarmOption.css';

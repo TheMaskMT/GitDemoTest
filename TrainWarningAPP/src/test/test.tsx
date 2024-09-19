@@ -1,73 +1,42 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
-// React Component to manage and modify an array
-const ArrayManager = () => {
-    // Initialize state with an empty array
-    const [items, setItems] = useState([]);
-    const [inputValue, setInputValue] = useState('');
-    const [editIndex, setEditIndex] = useState(null);
+// Example array of future timestamps (in milliseconds)
+const futureTimestamps = [
+    Date.now() + 50000, // 5 seconds from now
+    Date.now() + 10000, // 10 seconds from now
+    Date.now() + 15000, // 15 seconds from now
+];
 
-    // Handle input change for adding/editing
-    const handleInputChange = (e) => {
-        setInputValue(e.target.value);
-    };
+const TimeAlert = () => {
+    const [alerts, setAlerts] = useState([]);
 
-    // Add a new item to the array
-    const handleAddItem = () => {
-        if (inputValue.trim()) {
-            setItems([...items, inputValue]); // Add new item to array
-            setInputValue(''); // Clear input after adding
-        }
-    };
+    useEffect(() => {
+        // Loop through each timestamp and schedule a timeout for the alert
+        futureTimestamps.forEach((timestamp, index) => {
+            const delay = timestamp - Date.now(); // Calculate the delay relative to now
+            
+            if (delay > 0) {
+                const timeoutId = setTimeout(() => {
+                    alert(`Alert for time: ${new Date(timestamp).toLocaleTimeString()}`);
+                    setAlerts((prev) => [...prev, new Date(timestamp).toLocaleTimeString()]); // Store alert
+                }, delay);
 
-    // Edit an existing item in the array
-    const handleEditItem = (index) => {
-        setInputValue(items[index]); // Set current item value in input
-        setEditIndex(index); // Store index of the item being edited
-    };
-
-    // Save the edited item in the array
-    const handleSaveEdit = () => {
-        const updatedItems = [...items];
-        updatedItems[editIndex] = inputValue; // Update the value at the specified index
-        setItems(updatedItems);
-        setInputValue(''); // Clear input after saving
-        setEditIndex(null); // Reset the edit index
-    };
-
-    // Delete an item from the array
-    const handleDeleteItem = (index) => {
-        const updatedItems = items.filter((_, i) => i !== index); // Filter out the item by index
-        setItems(updatedItems);
-    };
+                // Clear the timeout if the component is unmounted
+                return () => clearTimeout(timeoutId);
+            }
+        });
+    }, []); // Run only once when the component mounts
 
     return (
         <div>
-            <h2>Array Manager</h2>
-            <div>
-                <input
-                    type="text"
-                    value={inputValue}
-                    onChange={handleInputChange}
-                    placeholder="Enter item"
-                />
-                {editIndex !== null ? (
-                    <button onClick={handleSaveEdit}>Save Edit</button>
-                ) : (
-                    <button onClick={handleAddItem}>Add Item</button>
-                )}
-            </div>
+            <h2>Time Alerts</h2>
             <ul>
-                {items.map((item, index) => (
-                    <li key={index}>
-                        {item}{' '}
-                        <button onClick={() => handleEditItem(index)}>Edit</button>{' '}
-                        <button onClick={() => handleDeleteItem(index)}>Delete</button>
-                    </li>
+                {alerts.map((alertTime, index) => (
+                    <li key={index}>Alert triggered at: {alertTime}</li>
                 ))}
             </ul>
         </div>
     );
 };
 
-export default ArrayManager;
+export default TimeAlert;

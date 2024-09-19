@@ -1,12 +1,18 @@
 import * as React from 'react';
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, View, Platform } from 'react-native';
 import { Fetch } from './components/Fetch';
+import { IndevelopScreen } from './IndevelopScreen';
 
 
 export function InfoScreen({navigation}){
   return(
     <View style={styles.container}>
-        <Fetch navigation={navigation}></Fetch>
+        
+        {
+        (Platform.OS === 'android') 
+        ? IndevelopScreen()
+        : <Fetch navigation={navigation}></Fetch>
+      }
     </View>
   );
 }

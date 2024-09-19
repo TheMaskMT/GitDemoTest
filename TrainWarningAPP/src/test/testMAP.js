@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { useEffect, useState, useRef } from 'react'
-import { View, StyleSheet, TouchableOpacity, Text} from 'react-native'
+import { View, StyleSheet, TouchableOpacity, Text, Image} from 'react-native'
 import { MapContainer, TileLayer, useMap, Marker, Popup } from 'react-leaflet'
 import "leaflet/dist/leaflet.css"
 import "../styles/style.css"
@@ -43,15 +43,15 @@ const LeafletMap = (lat, lng, markerList, here) => {
     //     }
     // ]
 
-    const customIcon = new Icon({
-        iconUrl: "../../assets/railroad-crossing.png",
-        iconSize: [24, 24]
-    })
+    // const customIcon = new Icon({
+    //     iconUrl: "../../assets/railroad-crossing.png",
+    //     iconSize: [24, 24]
+    // })
 
-    const HomeIcon = new Icon({
-        iconUrl: "../../assets/maps-and-flags.png",
-        iconSize: [30, 30]
-    })
+    // const HomeIcon = new Icon({
+    //     iconUrl: "../../assets/maps-and-flags.png",
+    //     iconSize: [30, 30]
+    // })
 
     return (
         // <View>
@@ -62,7 +62,7 @@ const LeafletMap = (lat, lng, markerList, here) => {
             {/* <Text style={{flex: 1}}></Text> */}
             <MapContainer
                 style={{height: '87.5vh'}}
-                center={position}
+                center={{lat, lng}}
                 zoom={(here==true)?17:18}
                 // whenCreated={() => {
                 //     mapRef.current = map
@@ -88,7 +88,7 @@ const LeafletMap = (lat, lng, markerList, here) => {
                     ))}
                 </MarkerClustererGroup> */}
                 
-                {markers.map(marker => (
+                {/* {markers.map(marker => (
                     (marker.geocode && marker.geocode.every !== undefined)
                     ?  <Marker position={marker.geocode} icon={customIcon}>
                             <Popup>
@@ -106,6 +106,29 @@ const LeafletMap = (lat, lng, markerList, here) => {
                     <Popup>
                         <div style={styles.header}>Bạn</div>
                         <div style={styles.details}>Đây là chỗ bạn đang đứng!!!</div>
+                    </Popup>
+                </Marker>
+                :<></>
+                } */}
+
+                {markers.map(marker => (
+                    (marker.geocode && marker.geocode.every !== undefined)
+                    ?  <Marker position={marker.geocode}>
+                            <Popup>
+                                <Text style={styles.header}>{marker.header}</Text>
+                                <Text style={styles.details}>{marker.details}</Text>
+                                {(marker.img && marker.img !== null)
+                                ? <Image src={marker.img} height={150} width={300}></Image>
+                                : <></>}
+                            </Popup>
+                        </Marker>
+                    : <></>
+                ))}
+                {(here == true)
+                ? <Marker position={{lat, lng}}>
+                    <Popup>
+                        <Text style={styles.header}>Bạn</Text>
+                        <Text style={styles.details}>Đây là chỗ bạn đang đứng!!!</Text>
                     </Popup>
                 </Marker>
                 :<></>

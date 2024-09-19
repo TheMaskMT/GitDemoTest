@@ -9,8 +9,6 @@ export function MapLocation({route, navigation}){
   return(
     <SafeAreaView style={styles.container}>
        {RefMap(lat, log)}
-       {/* <Text>Hello</Text> */}
-       
     </SafeAreaView>
   );
 }
